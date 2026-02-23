@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WCAG AA Colour Contrast Audit of the Top 500 Domains — CC-MAIN-2026-08</title>
+<meta name="description" content="Static analysis of WCAG 2.1 Level AA colour contrast compliance across 240 of the web's most-crawled domains, using archived homepage captures from Common Crawl's CC-MAIN-2026-08 dataset.">
+<meta name="author" content="T E Vaughan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://thunderpoot.github.io/wcag-audit/">
+<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="WCAG AA Colour Contrast Audit — CC-MAIN-2026-08">
+<meta property="og:description" content="Four in ten colour pairings fail WCAG AA contrast thresholds. Static analysis of 240 top domains from the Common Crawl archive.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://thunderpoot.github.io/wcag-audit/img/masthead.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:author" content="T E Vaughan">
+<meta property="article:published_time" content="2026-02-23">
+<meta property="article:section" content="Web Accessibility">
+<meta property="article:tag" content="WCAG">
+<meta property="article:tag" content="accessibility">
+<meta property="article:tag" content="colour contrast">
+<meta property="article:tag" content="Common Crawl">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WCAG AA Colour Contrast Audit — CC-MAIN-2026-08">
+<meta name="twitter:description" content="Four in ten colour pairings fail WCAG AA contrast thresholds across 240 top domains.">
+<meta name="twitter:image" content="https://thunderpoot.github.io/wcag-audit/img/masthead.webp">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "WCAG AA Colour Contrast Audit of the Top 500 Domains",
+  "alternativeHeadline": "Four in ten colour pairings fail contrast thresholds",
+  "image": "https://thunderpoot.github.io/wcag-audit/img/masthead.webp",
+  "author": {
+    "@type": "Person",
+    "name": "T E Vaughan",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Common Crawl",
+      "url": "https://commoncrawl.org"
+    }
+  },
+  "datePublished": "2026-02-23",
+  "description": "Static analysis of WCAG 2.1 Level AA colour contrast compliance across 240 of the web's most-crawled domains, using archived homepage captures from Common Crawl's CC-MAIN-2026-08 dataset.",
+  "keywords": ["WCAG", "accessibility", "colour contrast", "Common Crawl", "web standards"],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "isBasedOn": {
+    "@type": "Dataset",
+    "name": "Common Crawl CC-MAIN-2026-08",
+    "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html",
+    "provider": {
+      "@type": "Organization",
+      "name": "Common Crawl",
+      "url": "https://commoncrawl.org"
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Web Content Accessibility Guidelines",
+    "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── Tokens ── */
+  :root {
+    --bg: #111;
+    --surface: #1a1a1a;
+    --border: #2a2a2a;
+    --border-light: #333;
+    --text: #e8e0d4;
+    --text-mid: #ccc;
+    --text-dim: #999;
+    --text-faint: #919191;
+    --text-muted: #878787;
+    --text-ghost: #7e7e7e;
+    --accent: #c0876e;
+    --pass: #7ea8b8;
+    --pass-strong: #9ac0d0;
+    --fail: #c4786a;
+    --fail-soft: #b89080;
+    --mid: #a89898;
+    --serif: 'Crimson Pro', Georgia, serif;
+    --mono: 'JetBrains Mono', 'SF Mono', monospace;
+  }
+
+  /* ══════════════════════════════════════════════
+     MOBILE-FIRST BASE STYLES (320px+)
+     ══════════════════════════════════════════════ */
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--serif);
+    padding: 20px 16px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ── Links & abbreviations: no underlines ever ── */
+  a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+  a:hover, a:focus-visible { color: #d9a68e; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  abbr, abbr[title] { text-decoration: none; border-bottom: none; cursor: default; }
+  .header-crawl a { color: var(--text-muted); }
+  .header-crawl a:hover, .header-crawl a:focus-visible { color: var(--text-dim); }
+  .threshold-card .label a { color: var(--text-faint); }
+  .threshold-card .label a:hover, .threshold-card .label a:focus-visible { color: var(--text-dim); }
+  footer a { color: var(--text-muted); }
+  footer a:hover, footer a:focus-visible { color: var(--text-dim); }
+
+  /* ── Header ── */
+  .header-crawl {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  h1 a { color: var(--text); }
+  h1 a:hover, h1 a:focus-visible { color: var(--accent); }
+  .byline {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+  .header-desc {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+    line-height: 1.55;
+  }
+
+  /* ── Images ── */
+  .masthead {
+    width: 100%;
+    border-radius: 4px;
+    margin: 16px 0 0;
+    display: block;
+    height: auto;
+  }
+  .inline-img {
+    width: 100%;
+    border-radius: 4px;
+    margin: 20px 0;
+    display: block;
+    height: auto;
+  }
+  .placeholder-img {
+    width: 100%;
+    border-radius: 4px;
+    background: var(--surface);
+    border: 1px dashed var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+  }
+  .placeholder-img.masthead { height: 140px; margin: 16px 0 0; }
+  .placeholder-img.inline { height: 100px; margin: 20px 0; }
+
+  /* ── Tabs ── */
+  [role="tablist"] {
+    display: flex;
+    gap: 0;
+    margin: 24px 0;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  [role="tablist"]::-webkit-scrollbar { display: none; }
+  [role="tab"] {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  [role="tab"]:hover { color: var(--text-dim); }
+  [role="tab"]:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  [role="tab"][aria-selected="true"] {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+  }
+  [role="tabpanel"] { display: none; }
+  [role="tabpanel"].active { display: block; }
+  [role="tabpanel"]:focus { outline: none; }
+
+  /* ── Stats grid: 2-col on mobile ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: #222;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+  .stat-cell {
+    background: var(--surface);
+    padding: 16px 8px;
+    text-align: center;
+  }
+  .stat-value {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+  .stat-sub {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  /* ── Sections ── */
+  section { margin-bottom: 36px; }
+  section h2 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+  }
+  .section-note {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--text-faint);
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .prose {
+    font-family: var(--serif);
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+  .prose p { margin-bottom: 12px; }
+  .prose p:last-child { margin-bottom: 0; }
+  .prose strong { color: var(--accent); }
+
+  /* ── Coverage bar ── */
+  .coverage-bar {
+    display: flex;
+    gap: 2px;
+    height: 28px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .coverage-bar > div { transition: flex 0.4s ease; }
+  .coverage-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: #888;
+  }
+
+  /* ── Bar chart ── */
+  .bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 150px;
+    padding: 0 4px;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 6px;
+  }
+  .bar-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+    justify-content: flex-end;
+    min-width: 0;
+  }
+  .bar-value {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+  .bar-fill {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    transition: height 0.5s ease;
+    min-height: 2px;
+  }
+  .bar-labels {
+    display: flex;
+    gap: 4px;
+    padding: 0 4px;
+  }
+  .bar-labels span {
+    flex: 1;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 9px;
+    color: #888;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── Cumulative bars ── */
+  .cum-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+  .cum-label {
+    width: 52px;
+    color: var(--text-faint);
+    flex-shrink: 0;
+    font-size: 9px;
+  }
+  .cum-track {
+    flex: 1;
+    height: 16px;
+    background: var(--surface);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 8px;
+    min-width: 0;
+  }
+  .cum-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+  .cum-value {
+    width: 68px;
+    text-align: right;
+    color: var(--text-mid);
+    flex-shrink: 0;
+    font-size: 10px;
+  }
+
+  /* ── Threshold comparison ── */
+  .threshold-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .threshold-card {
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 16px;
+    font-family: var(--mono);
+  }
+  .threshold-card .label {
+    color: var(--text-faint);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .threshold-card .big {
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .threshold-card .sub {
+    color: #888;
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .threshold-card .accent-val {
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  /* ── Horizontal bar chart (categories) ── */
+  .hbar-chart { margin-bottom: 8px; }
+  .hbar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .hbar-label {
+    width: 80px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-mid);
+    text-align: right;
+    padding-right: 8px;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .hbar-track {
+    flex: 1;
+    height: 18px;
+    background: #1f1f1f;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    min-width: 0;
+  }
+  .hbar-fill {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+    transition: width 0.5s ease;
+  }
+  .hbar-mean-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    border-left: 2px dashed var(--accent);
+  }
+  .hbar-value {
+    width: 44px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    text-align: right;
+    padding-left: 6px;
+    flex-shrink: 0;
+  }
+
+  /* ── Table ── */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -16px;
+    padding: 0 16px;
+  }
+  .data-table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+  .data-table caption {
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+    line-height: 1.5;
+    caption-side: top;
+    min-width: 480px;
+  }
+  .data-table th {
+    padding: 6px 8px;
+    text-align: right;
+    color: var(--text-faint);
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-light);
+    white-space: nowrap;
+  }
+  .data-table th:first-child { text-align: left; }
+  .data-table td {
+    padding: 6px 8px;
+    text-align: right;
+    border-bottom: 1px solid #1f1f1f;
+    white-space: nowrap;
+  }
+  .data-table td:first-child {
+    text-align: left;
+    color: var(--text-mid);
+  }
+  .data-table td.dim { color: #888; }
+  .data-table td.good { color: var(--pass); font-weight: 700; }
+  .data-table td.warn { color: var(--accent); font-weight: 700; }
+  .data-table td.bad { color: var(--fail); font-weight: 700; }
+  .data-table td.bad-count { color: var(--fail); }
+  .data-table td.dim-count { color: var(--text-dim); }
+  .data-table tbody th {
+    font-weight: 400;
+    border-bottom: 1px solid #1f1f1f;
+    white-space: nowrap;
+  }
+
+  /* ── Compliant sites grid: 1-col on mobile ── */
+  .compliant-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .compliant-card {
+    background: var(--surface);
+    border-radius: 4px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 3px solid #4a6a7a;
+  }
+  .compliant-card.strong { border-left-color: var(--pass); }
+  .compliant-card .domain {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-mid);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .compliant-card .pairings {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  .compliant-card .ratio {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--pass);
+    flex-shrink: 0;
+    margin-left: 8px;
+  }
+
+  /* ── Swatch pairs ── */
+  .swatch-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .swatch-pair {
+    width: 40px;
+    height: 24px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid var(--border-light);
+    flex-shrink: 0;
+  }
+  .swatch-pair > span { flex: 1; display: block; }
+  .swatch-ratio {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    min-width: 40px;
+    flex-shrink: 0;
+  }
+  .swatch-domain {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-mid);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── Method note: full width, no truncation ── */
+  .method-note {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+  .method-note p { margin-bottom: 12px; }
+  .method-note p:last-child { margin-bottom: 0; }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-ghost);
+    line-height: 2.0;
+  }
+
+  /* ══════════════════════════════════════════════
+     SMALL LANDSCAPE / LARGE PHONE (480px+)
+     ══════════════════════════════════════════════ */
+  @media (min-width: 480px) {
+    body { padding: 24px 20px; }
+
+    .coverage-legend {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .bar-chart { height: 180px; gap: 6px; padding: 0 6px; }
+    .bar-labels { gap: 6px; padding: 0 6px; }
+    .bar-labels span { font-size: 10px; }
+    .bar-value { font-size: 11px; }
+
+    .cum-label { width: 60px; font-size: 10px; }
+    .cum-value { font-size: 11px; }
+
+    .hbar-label { width: 95px; font-size: 11px; }
+    .hbar-value { font-size: 11px; }
+
+    .placeholder-img.masthead { height: 180px; }
+    .placeholder-img.inline { height: 130px; }
+
+    .compliant-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ══════════════════════════════════════════════
+     TABLET (640px+)
+     ══════════════════════════════════════════════ */
+  @media (min-width: 640px) {
+    body { padding: 28px 24px; max-width: 800px; }
+
+    h1 { font-size: 30px; }
+    .header-crawl { font-size: 11px; }
+    .header-desc { font-size: 15px; }
+
+    .stats-grid { grid-template-columns: repeat(4, 1fr); margin-bottom: 40px; }
+    .stat-cell { padding: 20px 0; }
+    .stat-value { font-size: 32px; }
+    .stat-label { font-size: 14px; }
+    .stat-sub { font-size: 11px; }
+
+    section { margin-bottom: 48px; }
+    section h2 { font-size: 22px; }
+
+    .bar-chart { height: 220px; gap: 8px; padding: 0 8px; }
+    .bar-labels { gap: 8px; padding: 0 8px; }
+    .bar-labels span { font-size: 11px; }
+    .bar-value { font-size: 12px; }
+    .coverage-bar { height: 32px; }
+
+    .cum-row { font-size: 12px; }
+    .cum-label { width: 70px; font-size: 11px; }
+    .cum-track { height: 18px; }
+    .cum-value { width: 80px; font-size: 12px; }
+
+    .threshold-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .threshold-card { padding: 20px; }
+    .threshold-card .big { font-size: 28px; }
+    .threshold-card .accent-val { font-size: 20px; }
+
+    .hbar-label { width: 110px; font-size: 12px; }
+    .hbar-track { height: 20px; }
+    .hbar-value { width: 50px; font-size: 12px; }
+
+    .data-table { font-size: 12px; }
+    .data-table th { padding: 8px 12px; font-size: 11px; }
+    .data-table td { padding: 8px 12px; }
+
+    .compliant-card .domain { font-size: 13px; }
+    .compliant-card .ratio { font-size: 12px; }
+    .swatch-pair { width: 48px; height: 28px; }
+    .swatch-ratio { font-size: 12px; }
+    .swatch-domain { font-size: 12px; }
+
+    .placeholder-img.masthead { height: 240px; border-radius: 6px; }
+    .placeholder-img.inline { height: 170px; }
+    .masthead { border-radius: 6px; }
+
+    footer { margin-top: 48px; font-size: 11px; }
+
+    [role="tab"] { font-size: 12px; padding: 8px 16px; }
+  }
+
+  /* ══════════════════════════════════════════════
+     DESKTOP (800px+)
+     ══════════════════════════════════════════════ */
+  @media (min-width: 800px) {
+    body { padding: 32px 24px; }
+    h1 { font-size: 34px; }
+    .stat-value { font-size: 36px; }
+    .placeholder-img.masthead { height: 260px; }
+    .placeholder-img.inline { height: 180px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" rel="noopener noreferrer" target="_blank"><abbr title="Web Content Accessibility Guidelines Level AA">WCAG AA</abbr></a> Colour Contrast Audit</h1>
+  <p class="byline">T&nbsp;E&nbsp;Vaughan</p>
+  <p class="header-desc">Static analysis of <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">colour contrast compliance</a> across 240 of the web's most-crawled domains, using only inline and embedded <abbr title="Cascading Style Sheets">CSS</abbr> from archived homepage captures. The <a href="./colour-contrast-wcag-audit.html">full paper</a> has further details, and <a href="https://github.com/thunderpoot/wcag-audit" rel="noopener noreferrer" target="_blank">the code is available on GitHub</a>.</p>
+  <p class="header-desc"><strong>Data source:</strong> the <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">February 2026 crawl archive (CC-MAIN-2026-08)</a> from <a href="https://commoncrawl.org" rel="noopener noreferrer" target="_blank">Common Crawl</a>.</p>
+
+  <img src="./img/masthead.webp" class="masthead" alt="Abstract visualisation of colour contrast" width="1200" height="630">
+</header>
+
+<nav aria-label="Dashboard sections">
+  <div role="tablist" aria-label="Audit results">
+    <button role="tab" id="tab-overview" aria-selected="true" aria-controls="panel-overview">Overview</button>
+    <button role="tab" id="tab-distribution" aria-selected="false" aria-controls="panel-distribution" tabindex="-1">Distribution</button>
+    <button role="tab" id="tab-categories" aria-selected="false" aria-controls="panel-categories" tabindex="-1">By Category</button>
+    <button role="tab" id="tab-notable" aria-selected="false" aria-controls="panel-notable" tabindex="-1">Notable Sites</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- OVERVIEW -->
+<article role="tabpanel" id="panel-overview" class="active" aria-labelledby="tab-overview" tabindex="0">
+  <div class="stats-grid" role="list" aria-label="Key statistics">
+    <div class="stat-cell" role="listitem">
+      <div class="stat-value" aria-hidden="true">240</div>
+      <div class="stat-label">Domains analysed</div>
+      <div class="stat-sub">of 428 with captures</div>
+      <span class="sr-only">240 domains analysed out of 428 with captures</span>
+    </div>
+    <div class="stat-cell" role="listitem">
+      <div class="stat-value" aria-hidden="true">59.8%</div>
+      <div class="stat-label">Mean pass rate</div>
+      <div class="stat-sub">normal text (<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">4.5:1</a>)</div>
+      <span class="sr-only">59.8% mean pass rate for normal text at 4.5 to 1 contrast ratio</span>
+    </div>
+    <div class="stat-cell" role="listitem">
+      <div class="stat-value" aria-hidden="true">69.7%</div>
+      <div class="stat-label">Mean pass rate</div>
+      <div class="stat-sub">large text (3.0:1)</div>
+      <span class="sr-only">69.7% mean pass rate for large text at 3.0 to 1 contrast ratio</span>
+    </div>
+    <div class="stat-cell" role="listitem">
+      <div class="stat-value" aria-hidden="true">20.4%</div>
+      <div class="stat-label">Fully compliant</div>
+      <div class="stat-sub">100% pass rate</div>
+      <span class="sr-only">20.4% of domains are fully compliant with a 100% pass rate</span>
+    </div>
+  </div>
+
+  <section aria-labelledby="headline-findings">
+    <h2 id="headline-findings">Four in ten colour pairings fail contrast thresholds</h2>
+    <div class="prose">
+      <p>Across the 240 domains where colour pairings were extractable, the <strong>median pass rate for normal text contrast is 62.7%</strong>. Roughly one in five sites (20.4%) achieve full compliance, whilst over a quarter (26.2%) fail more than half their pairings.</p>
+      <p>The large text threshold is more forgiving: the median jumps to 74.0%. This gap matters because much of the web's low-contrast text appears in smaller <abbr title="User Interface">UI</abbr> elements like navigation, footers, and form labels.</p>
+      <p>Of the 4,327 unique colour pairings extracted, <strong>1,771 (40.9%) fail</strong> the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">4.5:1 normal text threshold</a>. Many failures cluster around ratios of 1.0:1, caused by white-on-white or black-on-black from assumed default backgrounds.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="heading-coverage">
+    <h2 id="heading-coverage">Data coverage</h2>
+    <figure>
+      <div class="coverage-bar" role="img" aria-label="Coverage: 240 of 428 domains (56%) had extractable colour pairings">
+        <div style="flex: 240; background: var(--accent);"></div>
+        <div style="flex: 188; background: #333;"></div>
+      </div>
+      <figcaption class="coverage-legend">
+        <span>240 with extractable colour pairings (56%)</span>
+        <span>188 no pairings found (44%)</span>
+      </figcaption>
+    </figure>
+    <p style="font-family: var(--serif); font-size: 13px; color: var(--text-faint); margin-top: 10px; line-height: 1.5;">
+      Sites with no pairings typically rely entirely on external stylesheets or JavaScript-injected styles, which this static analysis cannot capture.
+    </p>
+
+    <img src="./img/coverage.webp" class="inline-img" alt="Light through layered glass" width="800" height="450">
+  </section>
+</article>
+
+<!-- DISTRIBUTION -->
+<article role="tabpanel" id="panel-distribution" aria-labelledby="tab-distribution" tabindex="0">
+  <section aria-labelledby="heading-distro">
+    <h2 id="heading-distro">Pass rate distribution</h2>
+    <p class="section-note">Number of domains in each pass rate bucket for normal text (<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">4.5:1</a> threshold). The largest group sits in the 50&ndash;75% range.</p>
+    <figure>
+      <div class="bar-chart" id="distro-chart" role="img" aria-label="Bar chart: 30 domains at 0 to 25%, 33 at 25 to 50%, 99 at 50 to 75%, 28 at 75 to 90%, 1 at 90 to 99%, 49 at 100%"></div>
+      <figcaption class="bar-labels" id="distro-labels"></figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="heading-cumulative">
+    <h2 id="heading-cumulative">Cumulative view</h2>
+    <div id="cumulative" role="list" aria-label="Cumulative domain counts by pass rate"></div>
+  </section>
+
+  <section aria-labelledby="heading-thresholds">
+    <h2 id="heading-thresholds">Normal vs. large text thresholds</h2>
+    <div class="threshold-grid">
+      <div class="threshold-card">
+        <div class="label"><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">Normal text (4.5:1)</a></div>
+        <div class="big">59.8%</div>
+        <div class="sub">mean pass rate</div>
+        <div class="accent-val">62.7%</div>
+        <div class="sub">median pass rate</div>
+      </div>
+      <div class="threshold-card">
+        <div class="label"><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">Large text (3.0:1)</a></div>
+        <div class="big">69.7%</div>
+        <div class="sub">mean pass rate</div>
+        <div class="accent-val">74.0%</div>
+        <div class="sub">median pass rate</div>
+      </div>
+    </div>
+  </section>
+</article>
+
+<!-- CATEGORIES -->
+<article role="tabpanel" id="panel-categories" aria-labelledby="tab-categories" tabindex="0">
+  <section aria-labelledby="heading-cat-chart">
+    <h2 id="heading-cat-chart">Mean pass rate by category</h2>
+    <p class="section-note">Excluding &ldquo;Other&rdquo;. Hosting/platform sites perform worst; education and e-commerce fare best.</p>
+    <figure>
+      <div class="hbar-chart" id="cat-chart" role="img" aria-label="Horizontal bar chart of mean pass rates by domain category"></div>
+    </figure>
+  </section>
+
+  <section aria-labelledby="heading-cat-table">
+    <h2 id="heading-cat-table">Category breakdown</h2>
+
+    <img src="./img/categories.webp" class="inline-img" alt="A grid of colours" width="800" height="450">
+
+    <div class="table-wrap">
+      <table class="data-table" id="cat-table">
+        <caption>Pass rate statistics by domain category, sorted by average pass rate descending.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col"><abbr title="Number of domains">n</abbr></th>
+            <th scope="col"><abbr title="Average">Avg</abbr>&nbsp;%</th>
+            <th scope="col">Median&nbsp;%</th>
+            <th scope="col"><abbr title="Fully compliant (100% pass rate)">100%</abbr></th>
+            <th scope="col">&lt;&nbsp;50%</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</article>
+
+<!-- NOTABLE -->
+<article role="tabpanel" id="panel-notable" aria-labelledby="tab-notable" tabindex="0">
+  <section aria-labelledby="heading-compliant">
+    <h2 id="heading-compliant">Fully compliant sites</h2>
+    <p class="section-note">Sites achieving 100% pass rate across all detected pairings. Sorted by number of pairings tested (more pairings = more confident result).</p>
+    <div class="compliant-grid" id="compliant-grid" role="list" aria-label="Fully compliant domains"></div>
+  </section>
+
+  <section aria-labelledby="heading-failures">
+    <h2 id="heading-failures">Notable failures</h2>
+    <p class="section-note">Sites with genuine contrast problems (excluding assumed-default artefacts like white-on-white). Shown with actual colour swatches.</p>
+
+    <img src="./img/swatches.webp" class="inline-img" alt="Paint swatches in earth tones" width="800" height="450">
+
+    <div id="failures" role="list" aria-label="Domains with notable contrast failures"></div>
+  </section>
+
+  <section aria-labelledby="heading-methodology">
+    <h2 id="heading-methodology">A note on methodology</h2>
+    <div class="method-note">
+      <p>This audit examines only inline <code>style</code> attributes and embedded <code>&lt;style&gt;</code> blocks found in archived homepage captures. It does not fetch external stylesheets, execute JavaScript, or render the page in a browser. As a result, the analysis captures a subset of each site's true colour landscape: the pairings that are declaratively present in the <abbr title="HyperText Markup Language">HTML</abbr> document itself.</p>
+      <p>Where a foreground colour is declared without a corresponding background (or vice versa), the audit assumes the <abbr title="Cascading Style Sheets">CSS</abbr> default: white (<code>#fff</code>) for backgrounds, black (<code>#000</code>) for text. This produces a number of 1.0:1 ratio artefacts (white-on-white, black-on-black) that are not real visual failures but limitations of static analysis without rendering context.</p>
+      <p>Many 0% pass rate sites in the raw data have only a single pairing at 1.0:1. The &ldquo;notable failures&rdquo; section filters these out, showing only sites whose worst pairings have ratios that suggest genuine contrast problems rather than default-assumption artefacts.</p>
+      <p>Sites that rely entirely on external stylesheets, CSS frameworks loaded via <code>&lt;link&gt;</code>, or JavaScript-driven rendering (such as single-page applications) will appear in the &ldquo;no pairings found&rdquo; category. This accounts for 188 of the 428 domains with captures, meaning the 240 analysed domains skew towards sites that use at least some inline or embedded styling.</p>
+      <p>All captures were drawn from the <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">CC-MAIN-2026-08</a> crawl. Where multiple captures of the same registered domain existed, the audit preferred the <code>www</code> subdomain or bare domain over deeper subdomains, and <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> over <abbr title="Hypertext Transfer Protocol">HTTP</abbr>.</p>
+    </div>
+  </section>
+</article>
+
+</main>
+
+<footer>
+  <p>Data: <a href="https://commoncrawl.org" rel="noopener noreferrer" target="_blank">Common Crawl</a> <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">CC-MAIN-2026-08</a> &middot; 428 domains with captures &middot; 240 with extractable colour pairings &middot; 4,327 unique pairings</p>
+  <p>Methodology: Static <abbr title="Cascading Style Sheets">CSS</abbr> analysis of inline styles and embedded stylesheets from archived homepage captures. No external CSS, no JavaScript rendering. <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr>&nbsp;2.1 <abbr title="Success Criterion">SC</abbr>&nbsp;1.4.3</a></p>
+  <p><a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer license" target="_blank"><abbr title="Creative Commons Zero">CC0</abbr>&nbsp;1.0</a> &mdash; This work is dedicated to the public domain.</p>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ── Tab switching with full WAI-ARIA keyboard support ── */
+  var tabs = document.querySelectorAll("[role='tab']");
+  var panels = document.querySelectorAll("[role='tabpanel']");
+
+  function activateTab(tab) {
+    tabs.forEach(function (t) {
+      t.setAttribute("aria-selected", "false");
+      t.setAttribute("tabindex", "-1");
+    });
+    panels.forEach(function (p) { p.classList.remove("active"); });
+    tab.setAttribute("aria-selected", "true");
+    tab.removeAttribute("tabindex");
+    document.getElementById(tab.getAttribute("aria-controls")).classList.add("active");
+    tab.focus();
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () { activateTab(tab); });
+    tab.addEventListener("keydown", function (e) {
+      var tabArr = Array.prototype.slice.call(tabs);
+      var idx = tabArr.indexOf(tab);
+      var next;
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        next = tabArr[(idx + 1) % tabArr.length];
+        e.preventDefault();
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        next = tabArr[(idx - 1 + tabArr.length) % tabArr.length];
+        e.preventDefault();
+      } else if (e.key === "Home") {
+        next = tabArr[0];
+        e.preventDefault();
+      } else if (e.key === "End") {
+        next = tabArr[tabArr.length - 1];
+        e.preventDefault();
+      }
+      if (next) { activateTab(next); }
+    });
+  });
+
+  /* ── Data ── */
+  var distro = [
+    { range: "0\u201325%", count: 30, color: "#c4786a" },
+    { range: "25\u201350%", count: 33, color: "#b89080" },
+    { range: "50\u201375%", count: 99, color: "#a89898" },
+    { range: "75\u201390%", count: 28, color: "#8aa0aa" },
+    { range: "90\u201399%", count: 1, color: "#7ea8b8" },
+    { range: "100%", count: 49, color: "#9ac0d0" }
+  ];
+
+  var categories = [
+    { name: "Education", count: 47, avg: 63.7, median: 64.7, compliant: 14, below50: 10 },
+    { name: "Government", count: 14, avg: 49.7, median: 54.5, compliant: 1, below50: 4 },
+    { name: "Technology", count: 10, avg: 47.7, median: 50.0, compliant: 1, below50: 4 },
+    { name: "News/Media", count: 10, avg: 61.7, median: 75.0, compliant: 1, below50: 4 },
+    { name: "Hosting", count: 11, avg: 44.6, median: 43.3, compliant: 2, below50: 6 },
+    { name: "E-commerce", count: 5, avg: 64.1, median: 66.7, compliant: 0, below50: 0 },
+    { name: "Open Knowledge", count: 7, avg: 52.4, median: 50.0, compliant: 0, below50: 0 },
+    { name: "Other", count: 134, avg: 61.5, median: 64.7, compliant: 30, below50: 35 }
+  ];
+
+  var compliant = [
+    { domain: "desktopnexus.com", pairings: 6, ratio: 8.44 },
+    { domain: "hatenablog.com", pairings: 6, ratio: 13.14 },
+    { domain: "baidu.com", pairings: 4, ratio: 17.89 },
+    { domain: "craigslist.org", pairings: 4, ratio: 12.33 },
+    { domain: "fu-berlin.de", pairings: 4, ratio: 11.21 },
+    { domain: "tokyo.lg.jp", pairings: 4, ratio: 14.15 },
+    { domain: "unt.edu", pairings: 4, ratio: 8.54 },
+    { domain: "prnewswire.com", pairings: 3, ratio: 13.57 },
+    { domain: "anu.edu.au", pairings: 2, ratio: 19.52 },
+    { domain: "gutenberg.org", pairings: 2, ratio: 16.82 },
+    { domain: "ibm.com", pairings: 2, ratio: 13.37 },
+    { domain: "yale.edu", pairings: 2, ratio: 8.88 },
+    { domain: "berkeley.edu", pairings: 1, ratio: 12.02 },
+    { domain: "admin.ch", pairings: 1, ratio: 21.0 },
+    { domain: "culture.gouv.fr", pairings: 1, ratio: 18.04 }
+  ];
+
+  var failures = [
+    { domain: "shopify.com", ratio: 1.06, fg: "#000", bg: "#000a1e" },
+    { domain: "nfl.com", ratio: 1.63, fg: "#000", bg: "#143352" },
+    { domain: "iol.pt", ratio: 3.77, fg: "#000", bg: "#0066cc" },
+    { domain: "substack.com", ratio: 4.0, fg: "#fff", bg: "#f00" },
+    { domain: "github.io", ratio: 4.02, fg: "#d4582a", bg: "#fff" },
+    { domain: "copernicus.org", ratio: 4.13, fg: "#000", bg: "#0072BC" },
+    { domain: "netlify.app", ratio: 4.35, fg: "#666", bg: "#e0e0e0" }
+  ];
+
+  /* ── Helper ── */
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    if (attrs) {
+      Object.keys(attrs).forEach(function (k) {
+        if (k === "text") { node.textContent = attrs[k]; }
+        else if (k === "html") { node.innerHTML = attrs[k]; }
+        else if (k === "style" && typeof attrs[k] === "object") {
+          Object.keys(attrs[k]).forEach(function (s) { node.style[s] = attrs[k][s]; });
+        }
+        else { node.setAttribute(k, attrs[k]); }
+      });
+    }
+    if (children) {
+      children.forEach(function (c) { if (c) { node.appendChild(c); } });
+    }
+    return node;
+  }
+
+  /* ── Distribution bar chart ── */
+  var maxCount = Math.max.apply(null, distro.map(function (d) { return d.count; }));
+  var chartEl = document.getElementById("distro-chart");
+  var lblsEl = document.getElementById("distro-labels");
+  distro.forEach(function (d) {
+    chartEl.appendChild(
+      el("div", { "class": "bar-col" }, [
+        el("div", { "class": "bar-value", text: String(d.count) }),
+        el("div", { "class": "bar-fill", style: {
+          height: Math.max((d.count / maxCount) * 100, 1) + "%",
+          background: d.color
+        }})
+      ])
+    );
+    lblsEl.appendChild(el("span", { text: d.range }));
+  });
+
+  /* ── Cumulative view ── */
+  var cumEl = document.getElementById("cumulative");
+  var cumTotal = 0;
+  distro.forEach(function (d) {
+    cumTotal += d.count;
+    var pct = Math.round((cumTotal / 240) * 100);
+    var row = el("div", { "class": "cum-row", role: "listitem" });
+    row.appendChild(el("div", { "class": "cum-label", text: d.range }));
+    var track = el("div", { "class": "cum-track" });
+    track.appendChild(el("div", { "class": "cum-fill", style: { width: pct + "%", background: d.color } }));
+    row.appendChild(track);
+    row.appendChild(el("div", { "class": "cum-value", text: cumTotal + " (" + pct + "%)" }));
+    cumEl.appendChild(row);
+  });
+
+  /* ── Category horizontal bars ── */
+  var catChart = document.getElementById("cat-chart");
+  var catSorted = categories.filter(function (c) { return c.name !== "Other"; })
+    .sort(function (a, b) { return a.avg - b.avg; });
+  catSorted.forEach(function (c) {
+    var fillColor = c.avg < 50 ? "#b89080" : "#7ea8b8";
+    var row = el("div", { "class": "hbar-row" });
+    row.appendChild(el("div", { "class": "hbar-label", text: c.name }));
+    var track = el("div", { "class": "hbar-track" });
+    track.appendChild(el("div", { "class": "hbar-fill", style: { width: c.avg + "%", background: fillColor } }));
+    track.appendChild(el("div", { "class": "hbar-mean-line", style: { left: "59.8%" } }));
+    row.appendChild(track);
+    row.appendChild(el("div", { "class": "hbar-value", text: c.avg.toFixed(1) + "%" }));
+    catChart.appendChild(row);
+  });
+  catChart.appendChild(el("div", {
+    style: { fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent)", marginTop: "4px", paddingLeft: "80px" },
+    html: '<span style="margin-left:calc(59.8% - 20px);">\u25B2 mean 59.8%</span>'
+  }));
+
+  /* ── Category table ── */
+  var tbody = document.querySelector("#cat-table tbody");
+  categories.sort(function (a, b) { return b.avg - a.avg; }).forEach(function (c) {
+    var tr = document.createElement("tr");
+    var avgClass = c.avg >= 60 ? "good" : c.avg >= 50 ? "warn" : "bad";
+    var belowClass = c.below50 > 3 ? "bad-count" : "dim-count";
+    tr.appendChild(el("th", { scope: "row", text: c.name, style: {
+      textAlign: "left", textTransform: "none", letterSpacing: "0",
+      fontFamily: "var(--mono)", color: "var(--text-mid)"
+    }}));
+    tr.appendChild(el("td", { "class": "dim", text: String(c.count) }));
+    tr.appendChild(el("td", { "class": avgClass, text: c.avg.toFixed(1) }));
+    tr.appendChild(el("td", { "class": "dim", text: c.median.toFixed(1) }));
+    tr.appendChild(el("td", { style: { color: "var(--pass)" }, text: String(c.compliant) }));
+    tr.appendChild(el("td", { "class": belowClass, text: String(c.below50) }));
+    tbody.appendChild(tr);
+  });
+
+  /* ── Compliant sites ── */
+  var compGrid = document.getElementById("compliant-grid");
+  compliant.forEach(function (s) {
+    var card = el("div", {
+      "class": "compliant-card" + (s.pairings >= 4 ? " strong" : ""),
+      role: "listitem"
+    });
+    var left = el("div", { style: { minWidth: "0" } });
+    left.appendChild(el("div", { "class": "domain", text: s.domain }));
+    left.appendChild(el("div", { "class": "pairings", text: s.pairings + " pairings" }));
+    card.appendChild(left);
+    card.appendChild(el("div", { "class": "ratio", text: s.ratio.toFixed(1) + ":1 avg" }));
+    compGrid.appendChild(card);
+  });
+
+  /* ── Failure swatches ── */
+  var failEl = document.getElementById("failures");
+  failures.forEach(function (s) {
+    var row = el("div", {
+      "class": "swatch-row",
+      role: "listitem",
+      "aria-label": s.domain + ": " + s.ratio.toFixed(1) + " to 1 contrast ratio"
+    });
+    var swatch = el("div", { "class": "swatch-pair", "aria-hidden": "true" });
+    swatch.appendChild(el("span", { style: { background: s.bg } }));
+    swatch.appendChild(el("span", { style: { background: s.fg } }));
+    row.appendChild(swatch);
+    row.appendChild(el("div", { "class": "swatch-ratio", text: s.ratio.toFixed(1) + ":1" }));
+    row.appendChild(el("div", { "class": "swatch-domain", text: s.domain }));
+    failEl.appendChild(row);
+  });
+
+})();
+</script>
+</body>
+</html>

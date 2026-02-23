@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colour Contrast on the Web: A WCAG 2.1 Level AA Compliance Audit — CC-MAIN-2026-08</title>
+<meta name="description" content="A large-scale automated audit of WCAG 2.1 Level AA colour contrast compliance across the 500 most frequently crawled domains in Common Crawl's CC-MAIN-2026-08 archive. 40.9% of colour pairings fail the 4.5:1 threshold.">
+<meta name="author" content="T E Vaughan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://thunderpoot.github.io/wcag-audit/colour-contrast-wcag-audit.html">
+<link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Colour Contrast on the Web: A WCAG 2.1 Level AA Compliance Audit">
+<meta property="og:description" content="40.9% of colour pairings fail WCAG AA contrast thresholds across 240 top domains. A reproducible audit using Common Crawl archives.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://thunderpoot.github.io/wcag-audit/img/masthead.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:author" content="T E Vaughan">
+<meta property="article:published_time" content="2026-02-23">
+<meta property="article:section" content="Web Accessibility">
+<meta property="article:tag" content="WCAG">
+<meta property="article:tag" content="accessibility">
+<meta property="article:tag" content="colour contrast">
+<meta property="article:tag" content="Common Crawl">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Colour Contrast on the Web: A WCAG 2.1 Level AA Compliance Audit">
+<meta name="twitter:description" content="40.9% of colour pairings fail WCAG AA contrast thresholds across 240 top domains.">
+<meta name="twitter:image" content="https://thunderpoot.github.io/wcag-audit/img/masthead.jpg">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Colour Contrast on the Web: A WCAG 2.1 Level AA Compliance Audit of Common Crawl's Top 500 Domains",
+  "alternativeHeadline": "40.9% of colour pairings fail contrast thresholds",
+  "image": "https://thunderpoot.github.io/wcag-audit/img/masthead.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "T E Vaughan",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Common Crawl",
+      "url": "https://commoncrawl.org"
+    }
+  },
+  "datePublished": "2026-02-23",
+  "description": "A large-scale automated audit of WCAG 2.1 Level AA colour contrast compliance across the 500 most frequently crawled domains in Common Crawl's CC-MAIN-2026-08 archive.",
+  "keywords": ["WCAG", "accessibility", "colour contrast", "Common Crawl", "web standards"],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "isBasedOn": {
+    "@type": "Dataset",
+    "name": "Common Crawl CC-MAIN-2026-08",
+    "url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html",
+    "provider": {
+      "@type": "Organization",
+      "name": "Common Crawl",
+      "url": "https://commoncrawl.org"
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Web Content Accessibility Guidelines",
+    "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── Tokens ── */
+  :root {
+    --bg: #111;
+    --surface: #1a1a1a;
+    --border: #2a2a2a;
+    --border-light: #333;
+    --text: #e8e0d4;
+    --text-mid: #ccc;
+    --text-dim: #999;
+    --text-faint: #919191;
+    --text-muted: #878787;
+    --text-ghost: #7e7e7e;
+    --accent: #c0876e;
+    --pass: #7ea8b8;
+    --pass-strong: #9ac0d0;
+    --fail: #c4786a;
+    --fail-soft: #b89080;
+    --mid: #a89898;
+    --serif: 'Crimson Pro', Georgia, serif;
+    --mono: 'JetBrains Mono', 'SF Mono', monospace;
+  }
+
+  /* ══════════════════════════════════════════════
+     MOBILE-FIRST BASE STYLES (320px+)
+     ══════════════════════════════════════════════ */
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--serif);
+    padding: 20px 16px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+  }
+
+  /* ── Links & abbreviations: no underlines ── */
+  a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
+  a:hover, a:focus-visible { color: #d9a68e; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  abbr, abbr[title] { text-decoration: none; border-bottom: none; cursor: default; }
+
+  /* ── Header ── */
+  .header-crawl {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .header-crawl a { color: var(--text-muted); }
+  .header-crawl a:hover { color: var(--text-dim); }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-dim);
+    line-height: 1.35;
+    margin-bottom: 6px;
+  }
+  .byline {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+  .date {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-ghost);
+    margin-top: 2px;
+  }
+
+  /* ── Dashboard link ── */
+  .dash-link {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    margin-top: 12px;
+    padding: 6px 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .dash-link:hover, .dash-link:focus-visible {
+    color: #d9a68e;
+    border-color: var(--accent);
+  }
+
+  /* ── Article body ── */
+  article {
+    margin-top: 32px;
+  }
+
+  /* ── Section headings ── */
+  h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+  }
+  h3 {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  /* ── Prose ── */
+  .prose {
+    font-family: var(--serif);
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.75;
+  }
+  .prose p { margin-bottom: 14px; }
+  .prose p:last-child { margin-bottom: 0; }
+  .prose strong { color: var(--accent); font-weight: 600; }
+  .prose em { font-style: italic; }
+
+  /* ── Abstract ── */
+  .abstract {
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 32px;
+    border-left: 3px solid var(--accent);
+  }
+  .abstract-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+  .abstract p {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+
+  /* ── Lists inside prose ── */
+  .prose ol, .prose ul {
+    margin: 12px 0 14px 20px;
+    color: var(--text-mid);
+  }
+  .prose li {
+    margin-bottom: 8px;
+    line-height: 1.65;
+    padding-left: 4px;
+  }
+  .prose ol { list-style-type: decimal; }
+
+  /* ── Code ── */
+  code {
+    font-family: var(--mono);
+    font-size: 0.88em;
+    color: var(--accent);
+    background: var(--surface);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  pre {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    background: var(--surface);
+    padding: 14px 16px;
+    border-radius: 4px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 14px 0;
+    line-height: 1.6;
+    border: 1px solid var(--border);
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  /* ── Tables ── */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 14px -16px;
+    padding: 0 16px;
+  }
+  table {
+    width: 100%;
+    min-width: 420px;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 11px;
+    margin: 14px 0;
+  }
+  table caption {
+    text-align: left;
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--text-faint);
+    margin-bottom: 8px;
+    line-height: 1.5;
+    caption-side: top;
+  }
+  th {
+    padding: 6px 8px;
+    text-align: right;
+    color: var(--text-faint);
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-light);
+    white-space: nowrap;
+  }
+  th:first-child { text-align: left; }
+  td {
+    padding: 6px 8px;
+    text-align: right;
+    border-bottom: 1px solid #1f1f1f;
+    white-space: nowrap;
+    color: var(--text-dim);
+  }
+  td:first-child {
+    text-align: left;
+    color: var(--text-mid);
+  }
+  /* Highlight classes for table cells */
+  td.good { color: var(--pass); font-weight: 700; }
+  td.warn { color: var(--accent); font-weight: 700; }
+  td.bad { color: var(--fail); font-weight: 700; }
+
+  /* ── Blockquote (for formulae) ── */
+  .formula {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-dim);
+    background: var(--surface);
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin: 14px 0;
+    line-height: 1.8;
+    border-left: 3px solid var(--border-light);
+    overflow-x: auto;
+  }
+
+  /* ── References ── */
+  .references {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.7;
+    counter-reset: ref;
+  }
+  .references p {
+    margin-bottom: 8px;
+    padding-left: 24px;
+    text-indent: -24px;
+  }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-ghost);
+    line-height: 2.0;
+  }
+  footer a { color: var(--text-muted); }
+  footer a:hover { color: var(--text-dim); }
+
+  /* ══════════════════════════════════════════════
+     480px+
+     ══════════════════════════════════════════════ */
+  @media (min-width: 480px) {
+    body { padding: 24px 20px; }
+    h1 { font-size: 27px; }
+    .subtitle { font-size: 17px; }
+    .abstract { padding: 20px; }
+    .table-wrap { margin: 14px -20px; padding: 0 20px; }
+  }
+
+  /* ══════════════════════════════════════════════
+     640px+
+     ══════════════════════════════════════════════ */
+  @media (min-width: 640px) {
+    body { padding: 28px 24px; max-width: 760px; }
+    h1 { font-size: 30px; }
+    .subtitle { font-size: 18px; }
+    h2 { font-size: 22px; margin-top: 48px; }
+    h3 { font-size: 18px; }
+    .header-crawl { font-size: 11px; }
+    .abstract { padding: 24px; }
+    .abstract p { font-size: 15px; }
+    table { font-size: 12px; }
+    th { padding: 8px 10px; font-size: 11px; }
+    td { padding: 8px 10px; }
+    footer { margin-top: 48px; font-size: 11px; }
+    .table-wrap { margin: 14px -24px; padding: 0 24px; }
+  }
+
+  /* ══════════════════════════════════════════════
+     800px+
+     ══════════════════════════════════════════════ */
+  @media (min-width: 800px) {
+    body { padding: 32px 24px; }
+    h1 { font-size: 34px; }
+    .subtitle { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Colour Contrast on the Web</h1>
+  <p class="subtitle">A <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" rel="noopener noreferrer" target="_blank"><abbr title="Web Content Accessibility Guidelines Level AA">WCAG 2.1</abbr> Level AA</a> Compliance Audit of Common Crawl&rsquo;s Top 500 Domains</p>
+  <p class="byline">T&nbsp;E&nbsp;Vaughan</p>
+  <p class="date">February 2026</p>
+  <a href="https://thunderpoot.github.com/wcag-audit" class="dash-link">Interactive dashboard &rarr;</a>
+</header>
+
+<article class="prose">
+
+  <div class="abstract">
+    <p class="abstract-label">Abstract</p>
+    <p>We present a large-scale automated audit of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1/2.2 Level AA colour contrast compliance across the 500 most frequently crawled registered domains in Common Crawl&rsquo;s CC-MAIN-2026-08 monthly archive. Rather than conducting a live crawl, all page content was sourced from Common Crawl&rsquo;s open <abbr title="Web ARChive">WARC</abbr> archives, ensuring reproducibility and eliminating any load on target web servers. Our static <abbr title="Cascading Style Sheets">CSS</abbr> analysis of 240 homepages identified 4,327 unique foreground/background colour pairings, of which 1,771 (40.9%) failed to meet the 4.5:1 contrast ratio threshold for normal text. The median per-site pass rate was 62.7%, with 20.4% of sites achieving full compliance across all detected colour pairings. These findings suggest that colour contrast remains a widespread accessibility barrier on the most prominent websites, with significant variation across domain categories.</p>
+  </div>
+
+  <!-- ── 1. Introduction ── -->
+  <h2>1. Introduction</h2>
+
+  <p>Web accessibility is a fundamental aspect of an inclusive internet. The Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>), maintained by the World Wide Web Consortium (<abbr title="World Wide Web Consortium">W3C</abbr>), define success criteria intended to make web content accessible to people with disabilities, including those with low vision, colour vision deficiencies, and other visual impairments.</p>
+
+  <p>Among the most measurable of these criteria is colour contrast. WCAG 2.1, under <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">Success Criterion 1.4.3</a> (Contrast, Minimum), requires that the visual presentation of text and images of text have a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text (defined as text at 18 points or larger, or 14 points or larger if bold). This criterion is classified as Level AA, the conformance level most commonly targeted by accessibility regulations worldwide, including the European Accessibility Act, Section 508 of the <abbr title="United States">US</abbr> Rehabilitation Act, and the <abbr title="United Kingdom">UK</abbr> Equality Act.</p>
+
+  <p>Previous studies of web accessibility have typically relied on live crawling of websites, which raises concerns about reproducibility (websites change over time), server load (automated audits can strain web infrastructure), and ethical considerations around crawling without explicit consent. In this study, we take a different approach: we use the open, freely available web archives maintained by <a href="https://commoncrawl.org" rel="noopener noreferrer" target="_blank">Common Crawl</a>, a non-profit organisation that performs broad web crawls on a monthly basis and makes the resulting data freely available to the public.</p>
+
+  <p>By sourcing all page content from Common Crawl&rsquo;s WARC files, our analysis is fully reproducible. Any researcher can re-run our pipeline against the same <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">CC-MAIN-2026-08</a> archive and obtain identical results. This approach also eliminates any load on the target websites themselves.</p>
+
+  <!-- ── 2. Methodology ── -->
+  <h2>2. Methodology</h2>
+
+  <h3>2.1 Domain Selection</h3>
+
+  <p>We selected the 500 most frequently crawled registered domains from Common Crawl&rsquo;s CC-MAIN-2026-08 monthly crawl, as ranked by page captures in Common Crawl&rsquo;s <a href="https://commoncrawl.github.io/cc-crawl-statistics/plots/domains" rel="noopener noreferrer" target="_blank">crawl statistics</a>. These statistics are derived from Common Crawl&rsquo;s <abbr title="Uniform Resource Locator">URL</abbr> index data and are publicly available. The domain list spans a diverse cross-section of the web, including blogging platforms (blogspot.com, wordpress.org), reference sites (wikipedia.org, wiktionary.org), technology companies (google.com, microsoft.com, apple.com), educational institutions, government agencies, and e-commerce platforms.</p>
+
+  <h3>2.2 Data Retrieval</h3>
+
+  <p>For each domain, we queried Common Crawl&rsquo;s <a href="https://commoncrawl.org/blog/columnar-index-for-the-common-crawl" rel="noopener noreferrer" target="_blank">Columnar Index</a> to locate an archived capture of the domain&rsquo;s homepage from the CC-MAIN-2026-08 crawl. The Columnar Index is a Parquet-based representation of the crawl index stored on <abbr title="Amazon Simple Storage Service">S3</abbr>, queryable via Amazon Athena. A single <abbr title="Structured Query Language">SQL</abbr> query across all 500 domains returns the <abbr title="Web ARChive">WARC</abbr> filename, byte offset, and record length for each homepage capture, identifying the exact location of the page content within Common Crawl&rsquo;s distributed WARC archive.</p>
+
+  <p>We then fetched the actual <abbr title="HyperText Markup Language">HTML</abbr> content using <abbr title="Hypertext Transfer Protocol">HTTP</abbr> byte-range requests to <code>data.commoncrawl.org</code>, extracting just the relevant WARC record from the larger archive file. This is the standard method for accessing individual pages within Common Crawl&rsquo;s petabyte-scale archive. Each WARC record contains the original HTTP response headers and body, from which we extracted the HTML document.</p>
+
+  <p>The index query was configured to select only successful responses (HTTP status 200) with a detected <abbr title="Multipurpose Internet Mail Extensions">MIME</abbr> type of <code>text/html</code>, preferring the <code>www</code> subdomain or bare domain over deeper subdomains, and <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> over HTTP where available.</p>
+
+  <h3>2.3 Colour Extraction</h3>
+
+  <p>From each HTML document, we extracted CSS colour declarations using two complementary methods:</p>
+
+  <ol>
+    <li><strong>Embedded stylesheets</strong>: All <code>&lt;style&gt;</code> block contents were parsed as <abbr title="Cascading Style Sheets">CSS</abbr>, extracting rule selectors and their <code>color</code> and <code>background-color</code> declarations. The CSS <code>background</code> shorthand property was also parsed to extract colour components.</li>
+    <li><strong>Inline styles</strong>: All <code>style</code> attributes on HTML elements were parsed for <code>color</code> and <code>background-color</code> declarations.</li>
+  </ol>
+
+  <p>This approach captures the static CSS present in the archived HTML. It does not capture styles applied by JavaScript at runtime, styles loaded from external CSS files (which would require additional index lookups and WARC fetches), or styles applied through CSS custom properties (<code>var(--name)</code>). This is a known limitation that we discuss in Section 5.</p>
+
+  <p>Colour values were parsed from all standard CSS colour formats: hexadecimal notation (<code>#RGB</code>, <code>#RRGGBB</code>, <code>#RGBA</code>, <code>#RRGGBBAA</code>), the <code>rgb()</code> and <code>rgba()</code> functions, the <code>hsl()</code> and <code>hsla()</code> functions, and all 148 CSS named colours. Non-colour values such as <code>transparent</code>, <code>inherit</code>, <code>currentColor</code>, and <code>initial</code> were excluded from analysis.</p>
+
+  <h3>2.4 Colour Pairing and Contrast Calculation</h3>
+
+  <p>Extracted colour declarations were paired into foreground/background combinations using the following rules:</p>
+
+  <ul>
+    <li>When both <code>color</code> and <code>background-color</code> are specified in the same CSS rule or inline style, they form an <strong>explicit pairing</strong>.</li>
+    <li>When only <code>color</code> is specified, it is paired with an <strong>assumed white background</strong> (#FFFFFF), reflecting the default rendering behaviour of web browsers.</li>
+    <li>When only <code>background-color</code> is specified, it is paired with <strong>assumed black text</strong> (#000000).</li>
+  </ul>
+
+  <p>Identical pairings (same foreground and background <abbr title="Red, Green, Blue">RGB</abbr> values) were deduplicated to avoid counting the same colour combination multiple times.</p>
+
+  <p>For each pairing, we calculated the contrast ratio using the formula defined in WCAG 2.1:</p>
+
+  <div class="formula">
+    Contrast ratio = (L<sub>1</sub> + 0.05) / (L<sub>2</sub> + 0.05)
+  </div>
+
+  <p>where L<sub>1</sub> is the relative luminance of the lighter colour and L<sub>2</sub> is the relative luminance of the darker colour. Relative luminance is calculated from linearised <abbr title="standard Red, Green, Blue">sRGB</abbr> values:</p>
+
+  <div class="formula">
+    L = 0.2126 &times; R<sub>lin</sub> + 0.7152 &times; G<sub>lin</sub> + 0.0722 &times; B<sub>lin</sub>
+  </div>
+
+  <p>where each component is linearised from its 8-bit sRGB value using the standard piecewise function.</p>
+
+  <h3>2.5 Compliance Assessment</h3>
+
+  <p>Each colour pairing was evaluated against two WCAG 2.1 Level AA thresholds:</p>
+
+  <ul>
+    <li><strong>Normal text</strong> (<abbr title="Success Criterion">SC</abbr> 1.4.3): Requires a contrast ratio of at least 4.5:1</li>
+    <li><strong>Large text</strong> (SC 1.4.3): Requires a contrast ratio of at least 3.0:1</li>
+  </ul>
+
+  <p>Since our static analysis does not determine the rendered font size of text elements, we report pass rates against both thresholds. The normal text threshold (4.5:1) is the more stringent criterion and represents the stricter assessment; the large text threshold (3.0:1) shows how results differ when the more lenient standard applies.</p>
+
+  <!-- ── 3. Results ── -->
+  <h2>3. Results</h2>
+
+  <h3>3.1 Coverage</h3>
+
+  <p>Of the 500 domains in our sample, 428 yielded analysable homepage HTML from the CC-MAIN-2026-08 archive. Of these, 240 contained at least one parseable CSS colour declaration. 188 homepages were retrieved successfully but contained no CSS colour data in their embedded or inline styles (these sites likely rely entirely on external stylesheets or JavaScript-injected styles).</p>
+
+  <h3>3.2 Overall Compliance</h3>
+
+  <p>Across 240 domains with colour data, we identified 4,327 unique foreground/background colour pairings. The overall compliance picture:</p>
+
+  <ul>
+    <li><strong>Mean per-site pass rate (normal text)</strong>: 59.8%</li>
+    <li><strong>Median per-site pass rate (normal text)</strong>: 62.7%</li>
+    <li><strong>Fully compliant sites</strong>: 20.4% (100% of pairings passing at 4.5:1)</li>
+    <li><strong>Sites with &gt;90% pass rate</strong>: 20.8%</li>
+    <li><strong>Sites with &lt;50% pass rate</strong>: 26.2%</li>
+  </ul>
+
+  <p>The distribution of per-site pass rates (normal text threshold) was:</p>
+
+  <div class="table-wrap">
+    <table>
+      <caption>Distribution of per-site pass rates for normal text (4.5:1 threshold).</caption>
+      <thead>
+        <tr>
+          <th scope="col">Pass rate range</th>
+          <th scope="col">Domains</th>
+          <th scope="col">Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>100% (fully compliant)</td><td>49</td><td>20.4%</td></tr>
+        <tr><td>90&ndash;99%</td><td>1</td><td>0.4%</td></tr>
+        <tr><td>75&ndash;89%</td><td>28</td><td>11.7%</td></tr>
+        <tr><td>50&ndash;74%</td><td>99</td><td>41.2%</td></tr>
+        <tr><td>25&ndash;49%</td><td>33</td><td>13.8%</td></tr>
+        <tr><td>0&ndash;24%</td><td>30</td><td>12.5%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>3.3 Analysis by Domain Category</h3>
+
+  <p>We categorised each domain by its primary function (Education, Government, Technology, News/Media, E-commerce, Hosting/Platform, Open Knowledge, Research, and Other).</p>
+
+  <div class="table-wrap">
+    <table>
+      <caption>Pass rate statistics by domain category, sorted by average pass rate descending.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Domains</th>
+          <th scope="col"><abbr title="Average">Avg</abbr> pass rate</th>
+          <th scope="col">Median</th>
+          <th scope="col">Fully compliant</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Research</td><td>1</td><td class="good">72.2%</td><td>72.2%</td><td>0</td></tr>
+        <tr><td><abbr title="European Union">EU</abbr> Institutions</td><td>1</td><td class="good">66.7%</td><td>66.7%</td><td>0</td></tr>
+        <tr><td>E-commerce</td><td>5</td><td class="good">64.1%</td><td>66.7%</td><td>0</td></tr>
+        <tr><td>Education</td><td>47</td><td class="good">63.7%</td><td>64.7%</td><td>14</td></tr>
+        <tr><td>News/Media</td><td>10</td><td class="good">61.7%</td><td>75.0%</td><td>1</td></tr>
+        <tr><td>Other</td><td>134</td><td class="good">61.5%</td><td>64.7%</td><td>30</td></tr>
+        <tr><td>Open Knowledge</td><td>7</td><td class="warn">52.4%</td><td>50.0%</td><td>0</td></tr>
+        <tr><td>Government</td><td>14</td><td class="bad">49.7%</td><td>54.5%</td><td>1</td></tr>
+        <tr><td>Technology</td><td>10</td><td class="bad">47.7%</td><td>50.0%</td><td>1</td></tr>
+        <tr><td>Hosting/Platform</td><td>11</td><td class="bad">44.6%</td><td>43.3%</td><td>2</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>3.4 Notable Findings</h3>
+
+  <h4>Worst Offenders</h4>
+
+  <p>The following domains had the lowest pass rates for normal text contrast:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Domain</th>
+          <th scope="col">Pass rate</th>
+          <th scope="col">Failing pairings</th>
+          <th scope="col">Worst ratio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>adelaide.edu.au</td><td class="bad">0.0%</td><td>1</td><td>1.0:1</td></tr>
+        <tr><td>alberta.ca</td><td class="bad">0.0%</td><td>1</td><td>1.0:1</td></tr>
+        <tr><td>af.mil</td><td class="bad">0.0%</td><td>1</td><td>1.0:1</td></tr>
+        <tr><td>copernicus.org</td><td class="bad">0.0%</td><td>1</td><td>4.13:1</td></tr>
+        <tr><td>github.io</td><td class="bad">0.0%</td><td>1</td><td>4.02:1</td></tr>
+        <tr><td>gamer.com.tw</td><td class="bad">0.0%</td><td>1</td><td>1.0:1</td></tr>
+        <tr><td>kit.edu</td><td class="bad">0.0%</td><td>1</td><td>1.0:1</td></tr>
+        <tr><td>iol.pt</td><td class="bad">0.0%</td><td>1</td><td>3.77:1</td></tr>
+        <tr><td>mts.ru</td><td class="bad">0.0%</td><td>1</td><td>1.0:1</td></tr>
+        <tr><td>ncl.ac.uk</td><td class="bad">0.0%</td><td>2</td><td>1.0:1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4>Fully Compliant Sites</h4>
+
+  <p>49 domains achieved a 100% pass rate across all detected colour pairings at the 4.5:1 threshold. Among those with the most pairings checked:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Domain</th>
+          <th scope="col">Pairings checked</th>
+          <th scope="col">Mean ratio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>desktopnexus.com</td><td>6</td><td class="good">8.44:1</td></tr>
+        <tr><td>hatenablog.com</td><td>6</td><td class="good">13.14:1</td></tr>
+        <tr><td>baidu.com</td><td>4</td><td class="good">17.89:1</td></tr>
+        <tr><td>craigslist.org</td><td>4</td><td class="good">12.33:1</td></tr>
+        <tr><td>fu-berlin.de</td><td>4</td><td class="good">11.21:1</td></tr>
+        <tr><td>tokyo.lg.jp</td><td>4</td><td class="good">14.15:1</td></tr>
+        <tr><td>unt.edu</td><td>4</td><td class="good">8.54:1</td></tr>
+        <tr><td>prnewswire.com</td><td>3</td><td class="good">13.57:1</td></tr>
+        <tr><td>anu.edu.au</td><td>2</td><td class="good">19.52:1</td></tr>
+        <tr><td>google.cn</td><td>2</td><td class="good">12.77:1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── 4. Discussion ── -->
+  <h2>4. Discussion</h2>
+
+  <h3>4.1 The State of Colour Contrast Compliance</h3>
+
+  <p>Our findings indicate that colour contrast compliance varies substantially across the web&rsquo;s most prominent domains. With a median per-site pass rate of 62.7% for normal text, a significant proportion of CSS-declared colour pairings fail to meet the WCAG AA threshold of 4.5:1. However, the interpretation of these numbers requires nuance.</p>
+
+  <p>First, not all colour pairings carry equal weight in a user&rsquo;s experience. A site might have several low-contrast pairings defined in CSS that are rarely or never applied to visible text elements. Our static analysis counts all declared pairings equally, without regard to their prominence or frequency of use on the page.</p>
+
+  <p>Second, sites that declare fewer colours in embedded CSS tend to show more extreme pass rates (either very high or very low), whilst sites with many colour declarations tend to cluster around the mean. This is partly an artefact of sites with rich embedded stylesheets offering more opportunities for both passing and failing pairings.</p>
+
+  <h3>4.2 Category Differences</h3>
+
+  <p>The highest-scoring category was Research with a mean pass rate of 72.2%, whilst Hosting/Platform had the lowest at 44.6%. These differences likely reflect varying levels of institutional attention to accessibility standards, with sectors subject to regulatory requirements (such as government and education) potentially investing more in compliance.</p>
+
+  <h3>4.3 Implications</h3>
+
+  <p>These findings highlight that even among the web&rsquo;s most popular domains, colour contrast barriers remain common. For users with low vision or colour vision deficiencies, these barriers can make content difficult or impossible to read. The prevalence of contrast failures across diverse categories of websites underscores the need for continued advocacy, tooling, and potentially regulation to improve web accessibility.</p>
+
+  <!-- ── 5. Limitations ── -->
+  <h2>5. Limitations</h2>
+
+  <p>This study has several important limitations:</p>
+
+  <ol>
+    <li><strong>Static analysis only</strong>: We parsed CSS declarations present in the archived HTML without executing JavaScript. Modern web applications often inject styles dynamically, use CSS-in-JS libraries, or load styles asynchronously. Our analysis therefore captures a lower bound of the total colour declarations on each page.</li>
+    <li><strong>No external stylesheets</strong>: We did not fetch external CSS files (referenced via <code>&lt;link&gt;</code> elements). Many sites define the majority of their styles in external files. Incorporating external stylesheet analysis would require additional index lookups and WARC fetches for each domain, significantly increasing pipeline complexity.</li>
+    <li><strong>No rendering context</strong>: We cannot determine which CSS selectors apply to which rendered elements, what font sizes are in effect, or whether low-contrast elements are actually visible to users. A pairing that fails the contrast test in our analysis might apply only to decorative elements or hidden content.</li>
+    <li><strong>Homepage bias</strong>: We analysed only each domain&rsquo;s homepage. Internal pages may have different colour schemes, templates, or accessibility characteristics.</li>
+    <li><strong>Snapshot in time</strong>: The CC-MAIN-2026-08 crawl captures a single point in time for each page. Websites may have been redesigned before or after the crawl date.</li>
+    <li><strong>Assumed defaults</strong>: When only a foreground colour was specified without a background, we assumed white (#FFFFFF), and vice versa with black (#000000). In practice, inherited styles or user agent defaults may produce different pairings.</li>
+  </ol>
+
+  <!-- ── 6. Reproducibility ── -->
+  <h2>6. Reproducibility</h2>
+
+  <p>The complete analysis pipeline is available as open-source Python code requiring only Python 3.9+ and no external dependencies beyond the standard library. The pipeline consists of four steps:</p>
+
+  <ol>
+    <li>Columnar Index queries via Amazon Athena to locate homepage captures in CC-MAIN-2026-08</li>
+    <li>WARC byte-range fetches to retrieve archived HTML</li>
+    <li>CSS colour extraction and WCAG contrast analysis</li>
+    <li>Aggregate statistics and report generation</li>
+  </ol>
+
+  <p>All data is sourced from Common Crawl&rsquo;s publicly available archives. Researchers can reproduce this analysis by running the pipeline against the same CC-MAIN-2026-08 crawl data, or adapt it to analyse different crawls or domain sets.</p>
+
+  <!-- ── 7. Conclusion ── -->
+  <h2>7. Conclusion</h2>
+
+  <p>We conducted a large-scale WCAG 2.1 Level AA colour contrast audit of the 500 most frequently crawled domains in Common Crawl&rsquo;s CC-MAIN-2026-08 archive, analysing 4,327 unique colour pairings across 240 homepages. Our findings reveal that 79.6% of sites contain at least one colour pairing that fails the 4.5:1 normal text contrast threshold, with a median per-site pass rate of 62.7%.</p>
+
+  <p>Whilst static CSS analysis provides only a partial picture of a page&rsquo;s true accessibility, these results establish a reproducible baseline for tracking colour contrast compliance over time. Future work could extend this analysis to incorporate external stylesheets, JavaScript-rendered styles, and per-element rendering context, building toward a comprehensive picture of colour accessibility on the open web.</p>
+
+  <!-- ── References ── -->
+  <h2>References</h2>
+
+  <div class="references">
+    <p>1. W3C. (2018). Web Content Accessibility Guidelines (WCAG) 2.1. <a href="https://www.w3.org/TR/WCAG21/" rel="noopener noreferrer" target="_blank">https://www.w3.org/TR/WCAG21/</a></p>
+    <p>2. W3C. (2023). Web Content Accessibility Guidelines (WCAG) 2.2. <a href="https://www.w3.org/TR/WCAG22/" rel="noopener noreferrer" target="_blank">https://www.w3.org/TR/WCAG22/</a></p>
+    <p>3. Common Crawl Foundation. Common Crawl. <a href="https://commoncrawl.org" rel="noopener noreferrer" target="_blank">https://commoncrawl.org</a></p>
+    <p>4. Common Crawl. CC-MAIN-2026-08 Crawl Statistics. <a href="https://commoncrawl.github.io/cc-crawl-statistics/" rel="noopener noreferrer" target="_blank">https://commoncrawl.github.io/cc-crawl-statistics/</a></p>
+    <p>5. Common Crawl. Columnar Index documentation. <a href="https://commoncrawl.org/blog/columnar-index-for-the-common-crawl" rel="noopener noreferrer" target="_blank">https://commoncrawl.org/blog/columnar-index-for-the-common-crawl</a></p>
+    <p>6. W3C. (2018). Understanding SC 1.4.3: Contrast (Minimum). <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html</a></p>
+  </div>
+
+</article>
+
+<footer>
+  <p>Data: <a href="https://commoncrawl.org" rel="noopener noreferrer" target="_blank">Common Crawl</a> <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">CC-MAIN-2026-08</a> &middot; 428 domains with captures &middot; 240 with extractable colour pairings &middot; 4,327 unique pairings</p>
+  <p><a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer license" target="_blank"><abbr title="Creative Commons Zero">CC0</abbr>&nbsp;1.0</a> &mdash; This work is dedicated to the public domain.</p>
+</footer>
+
+</body>
+</html>

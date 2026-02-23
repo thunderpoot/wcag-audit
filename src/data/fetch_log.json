@@ -1,0 +1,2382 @@
+[
+  {
+    "domain": "adobe.com",
+    "status": "ok",
+    "size": 14966
+  },
+  {
+    "domain": "admin.ch",
+    "status": "ok",
+    "size": 5364
+  },
+  {
+    "domain": "adelaide.edu.au",
+    "status": "ok",
+    "size": 147807
+  },
+  {
+    "domain": "academic.ru",
+    "status": "ok",
+    "size": 81209
+  },
+  {
+    "domain": "aif.ru",
+    "status": "ok",
+    "size": 169391
+  },
+  {
+    "domain": "afternic.com",
+    "status": "ok",
+    "size": 127404
+  },
+  {
+    "domain": "163.com",
+    "status": "ok",
+    "size": 237276
+  },
+  {
+    "domain": "af.mil",
+    "status": "ok",
+    "size": 294625
+  },
+  {
+    "domain": "alberta.ca",
+    "status": "ok",
+    "size": 44248
+  },
+  {
+    "domain": "aliyun.com",
+    "status": "failed"
+  },
+  {
+    "domain": "airbnb.com",
+    "status": "ok",
+    "size": 617434
+  },
+  {
+    "domain": "alibaba.com",
+    "status": "ok",
+    "size": 148748
+  },
+  {
+    "domain": "answers.com",
+    "status": "ok",
+    "size": 365472
+  },
+  {
+    "domain": "amazonaws.com",
+    "status": "ok",
+    "size": 197496
+  },
+  {
+    "domain": "amazon.com",
+    "status": "ok",
+    "size": 322870
+  },
+  {
+    "domain": "android.com",
+    "status": "ok",
+    "size": 196763
+  },
+  {
+    "domain": "anu.edu.au",
+    "status": "ok",
+    "size": 114779
+  },
+  {
+    "domain": "apache.org",
+    "status": "ok",
+    "size": 48771
+  },
+  {
+    "domain": "app.link",
+    "status": "ok",
+    "size": 6712
+  },
+  {
+    "domain": "apple.com",
+    "status": "ok",
+    "size": 229202
+  },
+  {
+    "domain": "appspot.com",
+    "status": "ok",
+    "size": 3565
+  },
+  {
+    "domain": "arcgis.com",
+    "status": "failed"
+  },
+  {
+    "domain": "archive.org",
+    "status": "ok",
+    "size": 2674
+  },
+  {
+    "domain": "archives.gov",
+    "status": "ok",
+    "size": 27871
+  },
+  {
+    "domain": "archlinux.org",
+    "status": "ok",
+    "size": 25226
+  },
+  {
+    "domain": "arizona.edu",
+    "status": "ok",
+    "size": 68783
+  },
+  {
+    "domain": "army.mil",
+    "status": "ok",
+    "size": 141639
+  },
+  {
+    "domain": "art.pl",
+    "status": "ok",
+    "size": 293692
+  },
+  {
+    "domain": "atlassian.com",
+    "status": "ok",
+    "size": 1228909
+  },
+  {
+    "domain": "as.com",
+    "status": "ok",
+    "size": 671664
+  },
+  {
+    "domain": "baidu.com",
+    "status": "ok",
+    "size": 72193
+  },
+  {
+    "domain": "azurewebsites.net",
+    "status": "ok",
+    "size": 522848
+  },
+  {
+    "domain": "banggood.com",
+    "status": "ok",
+    "size": 96888
+  },
+  {
+    "domain": "bayern.de",
+    "status": "ok",
+    "size": 149140
+  },
+  {
+    "domain": "belta.by",
+    "status": "ok",
+    "size": 227240
+  },
+  {
+    "domain": "berkeley.edu",
+    "status": "ok",
+    "size": 68259
+  },
+  {
+    "domain": "bg.ac.rs",
+    "status": "failed"
+  },
+  {
+    "domain": "bibliocommons.com",
+    "status": "ok",
+    "size": 98835
+  },
+  {
+    "domain": "biglobe.ne.jp",
+    "status": "ok",
+    "size": 258
+  },
+  {
+    "domain": "bing.com",
+    "status": "ok",
+    "size": 58661
+  },
+  {
+    "domain": "blizzard.com",
+    "status": "ok",
+    "size": 94
+  },
+  {
+    "domain": "blog.jp",
+    "status": "failed"
+  },
+  {
+    "domain": "bme.hu",
+    "status": "ok",
+    "size": 261169
+  },
+  {
+    "domain": "blogspot.com",
+    "status": "ok",
+    "size": 476662
+  },
+  {
+    "domain": "bund.de",
+    "status": "ok",
+    "size": 22573
+  },
+  {
+    "domain": "bnf.fr",
+    "status": "ok",
+    "size": 61147
+  },
+  {
+    "domain": "bsky.app",
+    "status": "ok",
+    "size": 6948
+  },
+  {
+    "domain": "bplaced.net",
+    "status": "ok",
+    "size": 52533
+  },
+  {
+    "domain": "bundestag.de",
+    "status": "ok",
+    "size": 264493
+  },
+  {
+    "domain": "ca.gov",
+    "status": "ok",
+    "size": 28998
+  },
+  {
+    "domain": "cafe24.com",
+    "status": "ok",
+    "size": 773
+  },
+  {
+    "domain": "business-gazeta.ru",
+    "status": "failed"
+  },
+  {
+    "domain": "buzzsprout.com",
+    "status": "ok",
+    "size": 158553
+  },
+  {
+    "domain": "cam.ac.uk",
+    "status": "ok",
+    "size": 73541
+  },
+  {
+    "domain": "byu.edu",
+    "status": "ok",
+    "size": 129378
+  },
+  {
+    "domain": "canada.ca",
+    "status": "ok",
+    "size": 8838
+  },
+  {
+    "domain": "cancer.gov",
+    "status": "ok",
+    "size": 45457
+  },
+  {
+    "domain": "cbsnews.com",
+    "status": "ok",
+    "size": 891687
+  },
+  {
+    "domain": "ccm.net",
+    "status": "ok",
+    "size": 139627
+  },
+  {
+    "domain": "china.com",
+    "status": "failed"
+  },
+  {
+    "domain": "cern.ch",
+    "status": "ok",
+    "size": 207103
+  },
+  {
+    "domain": "ceskatelevize.cz",
+    "status": "failed"
+  },
+  {
+    "domain": "cbssports.com",
+    "status": "ok",
+    "size": 893297
+  },
+  {
+    "domain": "chinadaily.com.cn",
+    "status": "failed"
+  },
+  {
+    "domain": "cloudfront.net",
+    "status": "ok",
+    "size": 21107
+  },
+  {
+    "domain": "chinaz.com",
+    "status": "ok",
+    "size": 228500
+  },
+  {
+    "domain": "cnr.it",
+    "status": "failed"
+  },
+  {
+    "domain": "cnet.com",
+    "status": "ok",
+    "size": 351311
+  },
+  {
+    "domain": "cnrs.fr",
+    "status": "ok",
+    "size": 34559
+  },
+  {
+    "domain": "colorado.edu",
+    "status": "ok",
+    "size": 87145
+  },
+  {
+    "domain": "cocolog-nifty.com",
+    "status": "failed"
+  },
+  {
+    "domain": "cointelegraph.com",
+    "status": "ok",
+    "size": 703144
+  },
+  {
+    "domain": "columbia.edu",
+    "status": "ok",
+    "size": 124817
+  },
+  {
+    "domain": "com.ru",
+    "status": "failed"
+  },
+  {
+    "domain": "copernicus.org",
+    "status": "ok",
+    "size": 195786
+  },
+  {
+    "domain": "com.de",
+    "status": "failed"
+  },
+  {
+    "domain": "cornell.edu",
+    "status": "ok",
+    "size": 81820
+  },
+  {
+    "domain": "craigslist.org",
+    "status": "ok",
+    "size": 59133
+  },
+  {
+    "domain": "culture.gouv.fr",
+    "status": "ok",
+    "size": 178664
+  },
+  {
+    "domain": "cuni.cz",
+    "status": "ok",
+    "size": 66463
+  },
+  {
+    "domain": "cvut.cz",
+    "status": "ok",
+    "size": 30168
+  },
+  {
+    "domain": "cuny.edu",
+    "status": "ok",
+    "size": 116202
+  },
+  {
+    "domain": "debian.org",
+    "status": "ok",
+    "size": 15699
+  },
+  {
+    "domain": "dcinside.com",
+    "status": "ok",
+    "size": 216302
+  },
+  {
+    "domain": "developpement-durable.gouv.fr",
+    "status": "ok",
+    "size": 2227
+  },
+  {
+    "domain": "desktopnexus.com",
+    "status": "ok",
+    "size": 128220
+  },
+  {
+    "domain": "dict.cc",
+    "status": "ok",
+    "size": 49174
+  },
+  {
+    "domain": "dmm.com",
+    "status": "ok",
+    "size": 415579
+  },
+  {
+    "domain": "docomo.ne.jp",
+    "status": "ok",
+    "size": 173534
+  },
+  {
+    "domain": "donga.com",
+    "status": "failed"
+  },
+  {
+    "domain": "duke.edu",
+    "status": "ok",
+    "size": 316767
+  },
+  {
+    "domain": "eclipse.org",
+    "status": "ok",
+    "size": 42321
+  },
+  {
+    "domain": "educations.com",
+    "status": "ok",
+    "size": 355604
+  },
+  {
+    "domain": "elespanol.com",
+    "status": "ok",
+    "size": 787369
+  },
+  {
+    "domain": "elpais.com",
+    "status": "ok",
+    "size": 446544
+  },
+  {
+    "domain": "epfl.ch",
+    "status": "ok",
+    "size": 10400
+  },
+  {
+    "domain": "entrepreneur.com",
+    "status": "ok",
+    "size": 249009
+  },
+  {
+    "domain": "err.ee",
+    "status": "ok",
+    "size": 422168
+  },
+  {
+    "domain": "ethz.ch",
+    "status": "ok",
+    "size": 55
+  },
+  {
+    "domain": "ettoday.net",
+    "status": "ok",
+    "size": 310019
+  },
+  {
+    "domain": "exblog.jp",
+    "status": "ok",
+    "size": 195640
+  },
+  {
+    "domain": "excite.co.jp",
+    "status": "ok",
+    "size": 139393
+  },
+  {
+    "domain": "euskadi.eus",
+    "status": "failed"
+  },
+  {
+    "domain": "espn.com",
+    "status": "ok",
+    "size": 269299
+  },
+  {
+    "domain": "europa.eu",
+    "status": "ok",
+    "size": 302285
+  },
+  {
+    "domain": "flagcounter.com",
+    "status": "ok",
+    "size": 24810
+  },
+  {
+    "domain": "fandom.com",
+    "status": "ok",
+    "size": 85740
+  },
+  {
+    "domain": "expansion.mx",
+    "status": "ok",
+    "size": 240187
+  },
+  {
+    "domain": "fao.org",
+    "status": "ok",
+    "size": 650
+  },
+  {
+    "domain": "firebaseapp.com",
+    "status": "ok",
+    "size": 1828
+  },
+  {
+    "domain": "fau.de",
+    "status": "ok",
+    "size": 460739
+  },
+  {
+    "domain": "foursquare.com",
+    "status": "ok",
+    "size": 177936
+  },
+  {
+    "domain": "fedoraproject.org",
+    "status": "ok",
+    "size": 196550
+  },
+  {
+    "domain": "free.fr",
+    "status": "ok",
+    "size": 1229
+  },
+  {
+    "domain": "freebsd.org",
+    "status": "ok",
+    "size": 16035
+  },
+  {
+    "domain": "fu-berlin.de",
+    "status": "ok",
+    "size": 58764
+  },
+  {
+    "domain": "freelancer.com",
+    "status": "ok",
+    "size": 976583
+  },
+  {
+    "domain": "frontiersin.org",
+    "status": "ok",
+    "size": 222883
+  },
+  {
+    "domain": "freepik.com",
+    "status": "ok",
+    "size": 490846
+  },
+  {
+    "domain": "gamer.com.tw",
+    "status": "ok",
+    "size": 543626
+  },
+  {
+    "domain": "gatech.edu",
+    "status": "ok",
+    "size": 109917
+  },
+  {
+    "domain": "github.io",
+    "status": "ok",
+    "size": 28329
+  },
+  {
+    "domain": "github.com",
+    "status": "ok",
+    "size": 559073
+  },
+  {
+    "domain": "gnome.org",
+    "status": "ok",
+    "size": 26905
+  },
+  {
+    "domain": "globo.com",
+    "status": "ok",
+    "size": 108510
+  },
+  {
+    "domain": "globalvoices.org",
+    "status": "ok",
+    "size": 138423
+  },
+  {
+    "domain": "google.cn",
+    "status": "ok",
+    "size": 1388
+  },
+  {
+    "domain": "google.com",
+    "status": "ok",
+    "size": 949981
+  },
+  {
+    "domain": "gutenberg.org",
+    "status": "ok",
+    "size": 27712
+  },
+  {
+    "domain": "godaddy.com",
+    "status": "ok",
+    "size": 378304
+  },
+  {
+    "domain": "googlesource.com",
+    "status": "ok",
+    "size": 4063
+  },
+  {
+    "domain": "gov.sk",
+    "status": "ok",
+    "size": 48381
+  },
+  {
+    "domain": "gouv.qc.ca",
+    "status": "ok",
+    "size": 39415
+  },
+  {
+    "domain": "gov.ru",
+    "status": "failed"
+  },
+  {
+    "domain": "gov.bc.ca",
+    "status": "ok",
+    "size": 151465
+  },
+  {
+    "domain": "gta5-mods.com",
+    "status": "ok",
+    "size": 55454
+  },
+  {
+    "domain": "hatenablog.com",
+    "status": "ok",
+    "size": 158769
+  },
+  {
+    "domain": "harvard.edu",
+    "status": "ok",
+    "size": 157877
+  },
+  {
+    "domain": "hateblo.jp",
+    "status": "ok",
+    "size": 149382
+  },
+  {
+    "domain": "gva.es",
+    "status": "ok",
+    "size": 42215
+  },
+  {
+    "domain": "habr.com",
+    "status": "ok",
+    "size": 23303
+  },
+  {
+    "domain": "hatenablog.jp",
+    "status": "ok",
+    "size": 142552
+  },
+  {
+    "domain": "hatena.ne.jp",
+    "status": "failed"
+  },
+  {
+    "domain": "hatenadiary.jp",
+    "status": "ok",
+    "size": 66244
+  },
+  {
+    "domain": "hawaii.edu",
+    "status": "failed"
+  },
+  {
+    "domain": "hh.ru",
+    "status": "ok",
+    "size": 947195
+  },
+  {
+    "domain": "hindustantimes.com",
+    "status": "ok",
+    "size": 636877
+  },
+  {
+    "domain": "herokuapp.com",
+    "status": "ok",
+    "size": 36
+  },
+  {
+    "domain": "hp.com",
+    "status": "ok",
+    "size": 235225
+  },
+  {
+    "domain": "hotels.com",
+    "status": "ok",
+    "size": 905548
+  },
+  {
+    "domain": "house.gov",
+    "status": "ok",
+    "size": 211296
+  },
+  {
+    "domain": "hpe.com",
+    "status": "failed"
+  },
+  {
+    "domain": "hse.ru",
+    "status": "ok",
+    "size": 43082
+  },
+  {
+    "domain": "hypotheses.org",
+    "status": "ok",
+    "size": 142002
+  },
+  {
+    "domain": "hu-berlin.de",
+    "status": "ok",
+    "size": 185769
+  },
+  {
+    "domain": "huawei.com",
+    "status": "failed"
+  },
+  {
+    "domain": "hubspot.com",
+    "status": "ok",
+    "size": 657225
+  },
+  {
+    "domain": "iastate.edu",
+    "status": "ok",
+    "size": 60970
+  },
+  {
+    "domain": "ibiblio.org",
+    "status": "ok",
+    "size": 19798
+  },
+  {
+    "domain": "icm.edu.pl",
+    "status": "ok",
+    "size": 94895
+  },
+  {
+    "domain": "ibm.com",
+    "status": "ok",
+    "size": 36828
+  },
+  {
+    "domain": "idnes.cz",
+    "status": "ok",
+    "size": 212692
+  },
+  {
+    "domain": "imdb.com",
+    "status": "ok",
+    "size": 53570
+  },
+  {
+    "domain": "iheart.com",
+    "status": "ok",
+    "size": 336830
+  },
+  {
+    "domain": "illinois.edu",
+    "status": "ok",
+    "size": 95212
+  },
+  {
+    "domain": "ifeng.com",
+    "status": "ok",
+    "size": 330039
+  },
+  {
+    "domain": "imgur.com",
+    "status": "ok",
+    "size": 6679
+  },
+  {
+    "domain": "impress.co.jp",
+    "status": "ok",
+    "size": 42576
+  },
+  {
+    "domain": "in.gov",
+    "status": "ok",
+    "size": 244
+  },
+  {
+    "domain": "indiana.edu",
+    "status": "ok",
+    "size": 19839
+  },
+  {
+    "domain": "indiatimes.com",
+    "status": "ok",
+    "size": 132943
+  },
+  {
+    "domain": "inform.kz",
+    "status": "ok",
+    "size": 190581
+  },
+  {
+    "domain": "ine.es",
+    "status": "failed"
+  },
+  {
+    "domain": "inrae.fr",
+    "status": "ok",
+    "size": 255446
+  },
+  {
+    "domain": "interia.pl",
+    "status": "ok",
+    "size": 682223
+  },
+  {
+    "domain": "intuit.com",
+    "status": "ok",
+    "size": 557938
+  },
+  {
+    "domain": "iol.pt",
+    "status": "ok",
+    "size": 414279
+  },
+  {
+    "domain": "issuu.com",
+    "status": "ok",
+    "size": 145976
+  },
+  {
+    "domain": "iu.edu",
+    "status": "ok",
+    "size": 112741
+  },
+  {
+    "domain": "itmedia.co.jp",
+    "status": "ok",
+    "size": 92486
+  },
+  {
+    "domain": "jd.com",
+    "status": "ok",
+    "size": 259610
+  },
+  {
+    "domain": "jotform.com",
+    "status": "ok",
+    "size": 455227
+  },
+  {
+    "domain": "kb.se",
+    "status": "failed"
+  },
+  {
+    "domain": "kde.org",
+    "status": "ok",
+    "size": 49478
+  },
+  {
+    "domain": "kayak.com",
+    "status": "ok",
+    "size": 1562143
+  },
+  {
+    "domain": "kit.edu",
+    "status": "ok",
+    "size": 83282
+  },
+  {
+    "domain": "kommersant.ru",
+    "status": "ok",
+    "size": 462359
+  },
+  {
+    "domain": "korrespondent.net",
+    "status": "ok",
+    "size": 254812
+  },
+  {
+    "domain": "krakow.pl",
+    "status": "ok",
+    "size": 120028
+  },
+  {
+    "domain": "kremlin.ru",
+    "status": "failed"
+  },
+  {
+    "domain": "ku.edu",
+    "status": "ok",
+    "size": 74656
+  },
+  {
+    "domain": "kyoto-u.ac.jp",
+    "status": "ok",
+    "size": 61148
+  },
+  {
+    "domain": "launchpad.net",
+    "status": "ok",
+    "size": 24466
+  },
+  {
+    "domain": "legistar.com",
+    "status": "failed"
+  },
+  {
+    "domain": "lenovo.com",
+    "status": "ok",
+    "size": 71494
+  },
+  {
+    "domain": "libretexts.org",
+    "status": "ok",
+    "size": 77055
+  },
+  {
+    "domain": "libreoffice.org",
+    "status": "ok",
+    "size": 25284
+  },
+  {
+    "domain": "ligazakon.net",
+    "status": "ok",
+    "size": 643588
+  },
+  {
+    "domain": "libsyn.com",
+    "status": "ok",
+    "size": 148547
+  },
+  {
+    "domain": "line.me",
+    "status": "ok",
+    "size": 153490
+  },
+  {
+    "domain": "linternaute.com",
+    "status": "failed"
+  },
+  {
+    "domain": "livedoor.biz",
+    "status": "failed"
+  },
+  {
+    "domain": "loc.gov",
+    "status": "ok",
+    "size": 190894
+  },
+  {
+    "domain": "livedoor.blog",
+    "status": "ok",
+    "size": 10600
+  },
+  {
+    "domain": "livejournal.com",
+    "status": "ok",
+    "size": 618679
+  },
+  {
+    "domain": "lodz.pl",
+    "status": "ok",
+    "size": 100310
+  },
+  {
+    "domain": "lublin.pl",
+    "status": "ok",
+    "size": 202398
+  },
+  {
+    "domain": "made-in-china.com",
+    "status": "ok",
+    "size": 390503
+  },
+  {
+    "domain": "mail.ru",
+    "status": "failed"
+  },
+  {
+    "domain": "main.jp",
+    "status": "ok",
+    "size": 20024
+  },
+  {
+    "domain": "majestic.com",
+    "status": "ok",
+    "size": 110735
+  },
+  {
+    "domain": "marketscreener.com",
+    "status": "ok",
+    "size": 520595
+  },
+  {
+    "domain": "maryland.gov",
+    "status": "ok",
+    "size": 109373
+  },
+  {
+    "domain": "mathworks.com",
+    "status": "ok",
+    "size": 117761
+  },
+  {
+    "domain": "mcmaster.ca",
+    "status": "ok",
+    "size": 92048
+  },
+  {
+    "domain": "mhlw.go.jp",
+    "status": "ok",
+    "size": 104222
+  },
+  {
+    "domain": "mediaset.it",
+    "status": "ok",
+    "size": 2670352
+  },
+  {
+    "domain": "microsoft.com",
+    "status": "ok",
+    "size": 183082
+  },
+  {
+    "domain": "miami.edu",
+    "status": "ok",
+    "size": 150595
+  },
+  {
+    "domain": "mit.edu",
+    "status": "ok",
+    "size": 48028
+  },
+  {
+    "domain": "mn.gov",
+    "status": "ok",
+    "size": 77150
+  },
+  {
+    "domain": "mirtesen.ru",
+    "status": "ok",
+    "size": 155565
+  },
+  {
+    "domain": "msu.edu",
+    "status": "ok",
+    "size": 270897
+  },
+  {
+    "domain": "mpg.de",
+    "status": "failed"
+  },
+  {
+    "domain": "moe.edu.tw",
+    "status": "ok",
+    "size": 26822
+  },
+  {
+    "domain": "mozilla.org",
+    "status": "ok",
+    "size": 24565
+  },
+  {
+    "domain": "msk.ru",
+    "status": "ok",
+    "size": 66877
+  },
+  {
+    "domain": "msu.ru",
+    "status": "ok",
+    "size": 3763
+  },
+  {
+    "domain": "muni.cz",
+    "status": "ok",
+    "size": 92065
+  },
+  {
+    "domain": "mts.ru",
+    "status": "ok",
+    "size": 406193
+  },
+  {
+    "domain": "nasa.gov",
+    "status": "ok",
+    "size": 286177
+  },
+  {
+    "domain": "mynavi.jp",
+    "status": "ok",
+    "size": 36797
+  },
+  {
+    "domain": "ncl.ac.uk",
+    "status": "ok",
+    "size": 105746
+  },
+  {
+    "domain": "narod.ru",
+    "status": "ok",
+    "size": 40766
+  },
+  {
+    "domain": "ndl.go.jp",
+    "status": "ok",
+    "size": 211079
+  },
+  {
+    "domain": "ncsu.edu",
+    "status": "failed"
+  },
+  {
+    "domain": "ndtv.com",
+    "status": "ok",
+    "size": 996307
+  },
+  {
+    "domain": "neocities.org",
+    "status": "ok",
+    "size": 19502
+  },
+  {
+    "domain": "net.ru",
+    "status": "ok",
+    "size": 25205
+  },
+  {
+    "domain": "netlify.app",
+    "status": "ok",
+    "size": 14258
+  },
+  {
+    "domain": "news12.com",
+    "status": "ok",
+    "size": 500846
+  },
+  {
+    "domain": "netbsd.org",
+    "status": "ok",
+    "size": 12234
+  },
+  {
+    "domain": "newsru.com",
+    "status": "failed"
+  },
+  {
+    "domain": "nfl.com",
+    "status": "ok",
+    "size": 3301762
+  },
+  {
+    "domain": "nicovideo.jp",
+    "status": "ok",
+    "size": 141844
+  },
+  {
+    "domain": "niedersachsen.de",
+    "status": "ok",
+    "size": 42526
+  },
+  {
+    "domain": "nih.gov",
+    "status": "ok",
+    "size": 56911
+  },
+  {
+    "domain": "nist.gov",
+    "status": "ok",
+    "size": 96202
+  },
+  {
+    "domain": "nii.ac.jp",
+    "status": "ok",
+    "size": 43296
+  },
+  {
+    "domain": "ning.com",
+    "status": "ok",
+    "size": 128153
+  },
+  {
+    "domain": "noaa.gov",
+    "status": "failed"
+  },
+  {
+    "domain": "nsw.gov.au",
+    "status": "ok",
+    "size": 138307
+  },
+  {
+    "domain": "nrw.de",
+    "status": "ok",
+    "size": 29752
+  },
+  {
+    "domain": "nt.gov.au",
+    "status": "failed"
+  },
+  {
+    "domain": "ntu.edu.tw",
+    "status": "ok",
+    "size": 176295
+  },
+  {
+    "domain": "nvidia.com",
+    "status": "ok",
+    "size": 47
+  },
+  {
+    "domain": "nuget.org",
+    "status": "failed"
+  },
+  {
+    "domain": "ny.gov",
+    "status": "ok",
+    "size": 67115
+  },
+  {
+    "domain": "nypl.org",
+    "status": "ok",
+    "size": 216
+  },
+  {
+    "domain": "nyu.edu",
+    "status": "ok",
+    "size": 107519
+  },
+  {
+    "domain": "odoo.com",
+    "status": "ok",
+    "size": 98402
+  },
+  {
+    "domain": "oclc.org",
+    "status": "ok",
+    "size": 407
+  },
+  {
+    "domain": "obozrevatel.com",
+    "status": "ok",
+    "size": 299422
+  },
+  {
+    "domain": "omeka.net",
+    "status": "failed"
+  },
+  {
+    "domain": "office.com",
+    "status": "ok",
+    "size": 202026
+  },
+  {
+    "domain": "ojp.gov",
+    "status": "ok",
+    "size": 49717
+  },
+  {
+    "domain": "onet.pl",
+    "status": "ok",
+    "size": 1461081
+  },
+  {
+    "domain": "openedition.org",
+    "status": "ok",
+    "size": 977
+  },
+  {
+    "domain": "opensuse.org",
+    "status": "ok",
+    "size": 60012
+  },
+  {
+    "domain": "oracle.com",
+    "status": "ok",
+    "size": 54460
+  },
+  {
+    "domain": "opera.com",
+    "status": "ok",
+    "size": 231686
+  },
+  {
+    "domain": "org.ru",
+    "status": "failed"
+  },
+  {
+    "domain": "osu.edu",
+    "status": "ok",
+    "size": 435987
+  },
+  {
+    "domain": "overheid.nl",
+    "status": "ok",
+    "size": 16608
+  },
+  {
+    "domain": "over-blog.com",
+    "status": "ok",
+    "size": 214209
+  },
+  {
+    "domain": "overdrive.com",
+    "status": "failed"
+  },
+  {
+    "domain": "ovh.net",
+    "status": "ok",
+    "size": 13702
+  },
+  {
+    "domain": "ox.ac.uk",
+    "status": "ok",
+    "size": 96025
+  },
+  {
+    "domain": "panasonic.com",
+    "status": "ok",
+    "size": 78136
+  },
+  {
+    "domain": "pchome.com.tw",
+    "status": "ok",
+    "size": 233435
+  },
+  {
+    "domain": "people.com.cn",
+    "status": "failed"
+  },
+  {
+    "domain": "perfil.com",
+    "status": "ok",
+    "size": 453535
+  },
+  {
+    "domain": "pitt.edu",
+    "status": "ok",
+    "size": 96235
+  },
+  {
+    "domain": "pixnet.net",
+    "status": "ok",
+    "size": 385632
+  },
+  {
+    "domain": "poznan.pl",
+    "status": "ok",
+    "size": 220814
+  },
+  {
+    "domain": "playstation.com",
+    "status": "ok",
+    "size": 184113
+  },
+  {
+    "domain": "porsche.com",
+    "status": "ok",
+    "size": 232
+  },
+  {
+    "domain": "puma.com",
+    "status": "ok",
+    "size": 163961
+  },
+  {
+    "domain": "praca.gov.pl",
+    "status": "failed"
+  },
+  {
+    "domain": "pp.ua",
+    "status": "ok",
+    "size": 57826
+  },
+  {
+    "domain": "prnewswire.com",
+    "status": "ok",
+    "size": 229362
+  },
+  {
+    "domain": "princeton.edu",
+    "status": "ok",
+    "size": 105347
+  },
+  {
+    "domain": "pravda.sk",
+    "status": "ok",
+    "size": 244105
+  },
+  {
+    "domain": "psu.edu",
+    "status": "ok",
+    "size": 289423
+  },
+  {
+    "domain": "purdue.edu",
+    "status": "ok",
+    "size": 135804
+  },
+  {
+    "domain": "r-project.org",
+    "status": "ok",
+    "size": 6240
+  },
+  {
+    "domain": "qq.com",
+    "status": "ok",
+    "size": 114985
+  },
+  {
+    "domain": "rakuten.co.jp",
+    "status": "ok",
+    "size": 369352
+  },
+  {
+    "domain": "r7.com",
+    "status": "ok",
+    "size": 2039545
+  },
+  {
+    "domain": "rambler.ru",
+    "status": "ok",
+    "size": 253056
+  },
+  {
+    "domain": "rbc.ru",
+    "status": "ok",
+    "size": 238862
+  },
+  {
+    "domain": "redhat.com",
+    "status": "ok",
+    "size": 93
+  },
+  {
+    "domain": "rezdy.com",
+    "status": "ok",
+    "size": 96470
+  },
+  {
+    "domain": "rp.pl",
+    "status": "ok",
+    "size": 777983
+  },
+  {
+    "domain": "ria.ru",
+    "status": "ok",
+    "size": 189967
+  },
+  {
+    "domain": "ria.com",
+    "status": "ok",
+    "size": 333556
+  },
+  {
+    "domain": "rs-online.com",
+    "status": "ok",
+    "size": 125488
+  },
+  {
+    "domain": "rtp.pt",
+    "status": "ok",
+    "size": 78379
+  },
+  {
+    "domain": "sagepub.com",
+    "status": "ok",
+    "size": 60211
+  },
+  {
+    "domain": "ru.nl",
+    "status": "ok",
+    "size": 71020
+  },
+  {
+    "domain": "rutgers.edu",
+    "status": "ok",
+    "size": 191462
+  },
+  {
+    "domain": "samsung.com",
+    "status": "ok",
+    "size": 58612
+  },
+  {
+    "domain": "sakura.ne.jp",
+    "status": "ok",
+    "size": 298174
+  },
+  {
+    "domain": "sap.com",
+    "status": "ok",
+    "size": 4523
+  },
+  {
+    "domain": "salesforce.com",
+    "status": "ok",
+    "size": 2281
+  },
+  {
+    "domain": "sch.gr",
+    "status": "failed"
+  },
+  {
+    "domain": "sapo.pt",
+    "status": "failed"
+  },
+  {
+    "domain": "semrush.com",
+    "status": "ok",
+    "size": 230777
+  },
+  {
+    "domain": "seesaa.net",
+    "status": "failed"
+  },
+  {
+    "domain": "sfu.ca",
+    "status": "ok",
+    "size": 76668
+  },
+  {
+    "domain": "senate.gov",
+    "status": "ok",
+    "size": 38873
+  },
+  {
+    "domain": "service.gov.uk",
+    "status": "ok",
+    "size": 14604
+  },
+  {
+    "domain": "shein.com",
+    "status": "ok",
+    "size": 1121007
+  },
+  {
+    "domain": "si.edu",
+    "status": "failed"
+  },
+  {
+    "domain": "shopify.com",
+    "status": "ok",
+    "size": 450878
+  },
+  {
+    "domain": "siemens.com",
+    "status": "ok",
+    "size": 311301
+  },
+  {
+    "domain": "shop-pro.jp",
+    "status": "ok",
+    "size": 156019
+  },
+  {
+    "domain": "sinica.edu.tw",
+    "status": "ok",
+    "size": 550115
+  },
+  {
+    "domain": "sky.it",
+    "status": "ok",
+    "size": 12138
+  },
+  {
+    "domain": "sina.com.cn",
+    "status": "ok",
+    "size": 384409
+  },
+  {
+    "domain": "sld.cu",
+    "status": "ok",
+    "size": 202657
+  },
+  {
+    "domain": "snu.ac.kr",
+    "status": "ok",
+    "size": 103120
+  },
+  {
+    "domain": "sohu.com",
+    "status": "ok",
+    "size": 151447
+  },
+  {
+    "domain": "sogou.com",
+    "status": "ok",
+    "size": 4602
+  },
+  {
+    "domain": "spydus.co.uk",
+    "status": "ok",
+    "size": 120
+  },
+  {
+    "domain": "stanford.edu",
+    "status": "ok",
+    "size": 154487
+  },
+  {
+    "domain": "st-andrews.ac.uk",
+    "status": "ok",
+    "size": 35034
+  },
+  {
+    "domain": "spb.ru",
+    "status": "ok",
+    "size": 73399
+  },
+  {
+    "domain": "statcan.gc.ca",
+    "status": "ok",
+    "size": 388996
+  },
+  {
+    "domain": "stripe.com",
+    "status": "ok",
+    "size": 562167
+  },
+  {
+    "domain": "stlouisfed.org",
+    "status": "ok",
+    "size": 1113326
+  },
+  {
+    "domain": "statcounter.com",
+    "status": "ok",
+    "size": 25932
+  },
+  {
+    "domain": "steampowered.com",
+    "status": "failed"
+  },
+  {
+    "domain": "substack.com",
+    "status": "ok",
+    "size": 100437
+  },
+  {
+    "domain": "talent.com",
+    "status": "ok",
+    "size": 509873
+  },
+  {
+    "domain": "tableau.com",
+    "status": "ok",
+    "size": 199256
+  },
+  {
+    "domain": "teachable.com",
+    "status": "ok",
+    "size": 172972
+  },
+  {
+    "domain": "telegra.ph",
+    "status": "ok",
+    "size": 4580
+  },
+  {
+    "domain": "telegram.org",
+    "status": "ok",
+    "size": 19465
+  },
+  {
+    "domain": "telegraph.co.uk",
+    "status": "ok",
+    "size": 404626
+  },
+  {
+    "domain": "tengrinews.kz",
+    "status": "ok",
+    "size": 376724
+  },
+  {
+    "domain": "temple.edu",
+    "status": "ok",
+    "size": 124926
+  },
+  {
+    "domain": "timesnownews.com",
+    "status": "ok",
+    "size": 924513
+  },
+  {
+    "domain": "texas.gov",
+    "status": "ok",
+    "size": 161564
+  },
+  {
+    "domain": "tistory.com",
+    "status": "failed"
+  },
+  {
+    "domain": "tokyo.lg.jp",
+    "status": "ok",
+    "size": 551348
+  },
+  {
+    "domain": "tradingview.com",
+    "status": "ok",
+    "size": 969326
+  },
+  {
+    "domain": "toyota.com",
+    "status": "ok",
+    "size": 657324
+  },
+  {
+    "domain": "trend.az",
+    "status": "ok",
+    "size": 1137
+  },
+  {
+    "domain": "tum.de",
+    "status": "ok",
+    "size": 461460
+  },
+  {
+    "domain": "trip.com",
+    "status": "ok",
+    "size": 137630
+  },
+  {
+    "domain": "tufts.edu",
+    "status": "ok",
+    "size": 601336
+  },
+  {
+    "domain": "tyc.edu.tw",
+    "status": "ok",
+    "size": 135926
+  },
+  {
+    "domain": "tvbs.com.tw",
+    "status": "ok",
+    "size": 111347
+  },
+  {
+    "domain": "tvp.pl",
+    "status": "failed"
+  },
+  {
+    "domain": "twitcasting.tv",
+    "status": "failed"
+  },
+  {
+    "domain": "uab.cat",
+    "status": "ok",
+    "size": 89737
+  },
+  {
+    "domain": "ub.edu",
+    "status": "ok",
+    "size": 118298
+  },
+  {
+    "domain": "u-tokyo.ac.jp",
+    "status": "ok",
+    "size": 263849
+  },
+  {
+    "domain": "uba.ar",
+    "status": "ok",
+    "size": 83050
+  },
+  {
+    "domain": "ubc.ca",
+    "status": "ok",
+    "size": 30086
+  },
+  {
+    "domain": "ubuntu.com",
+    "status": "ok",
+    "size": 208591
+  },
+  {
+    "domain": "uc.pt",
+    "status": "ok",
+    "size": 87962
+  },
+  {
+    "domain": "ucdavis.edu",
+    "status": "ok",
+    "size": 121731
+  },
+  {
+    "domain": "uchile.cl",
+    "status": "ok",
+    "size": 75100
+  },
+  {
+    "domain": "ucla.edu",
+    "status": "ok",
+    "size": 100458
+  },
+  {
+    "domain": "ucm.es",
+    "status": "failed"
+  },
+  {
+    "domain": "ucr.ac.cr",
+    "status": "failed"
+  },
+  {
+    "domain": "ucsb.edu",
+    "status": "ok",
+    "size": 33696
+  },
+  {
+    "domain": "ucsd.edu",
+    "status": "ok",
+    "size": 59591
+  },
+  {
+    "domain": "uct.ac.za",
+    "status": "ok",
+    "size": 239524
+  },
+  {
+    "domain": "udn.com",
+    "status": "ok",
+    "size": 126
+  },
+  {
+    "domain": "ufl.edu",
+    "status": "ok",
+    "size": 406850
+  },
+  {
+    "domain": "ufsc.br",
+    "status": "failed"
+  },
+  {
+    "domain": "uefa.com",
+    "status": "ok",
+    "size": 434017
+  },
+  {
+    "domain": "ufrj.br",
+    "status": "ok",
+    "size": 32345
+  },
+  {
+    "domain": "ugr.es",
+    "status": "ok",
+    "size": 108486
+  },
+  {
+    "domain": "ugent.be",
+    "status": "ok",
+    "size": 30489
+  },
+  {
+    "domain": "uiowa.edu",
+    "status": "ok",
+    "size": 102577
+  },
+  {
+    "domain": "umd.edu",
+    "status": "ok",
+    "size": 93946
+  },
+  {
+    "domain": "uk.com",
+    "status": "failed"
+  },
+  {
+    "domain": "ulisboa.pt",
+    "status": "failed"
+  },
+  {
+    "domain": "ulaval.ca",
+    "status": "ok",
+    "size": 130304
+  },
+  {
+    "domain": "uma.es",
+    "status": "ok",
+    "size": 139765
+  },
+  {
+    "domain": "umich.edu",
+    "status": "ok",
+    "size": 125512
+  },
+  {
+    "domain": "umk.pl",
+    "status": "failed"
+  },
+  {
+    "domain": "umn.edu",
+    "status": "ok",
+    "size": 99115
+  },
+  {
+    "domain": "unam.mx",
+    "status": "ok",
+    "size": 71368
+  },
+  {
+    "domain": "uni-bonn.de",
+    "status": "ok",
+    "size": 923
+  },
+  {
+    "domain": "un.org",
+    "status": "ok",
+    "size": 9491
+  },
+  {
+    "domain": "uned.es",
+    "status": "ok",
+    "size": 1264169
+  },
+  {
+    "domain": "unc.edu",
+    "status": "ok",
+    "size": 183045
+  },
+  {
+    "domain": "uni-goettingen.de",
+    "status": "ok",
+    "size": 69182
+  },
+  {
+    "domain": "uni-hamburg.de",
+    "status": "ok",
+    "size": 54508
+  },
+  {
+    "domain": "uni-tuebingen.de",
+    "status": "ok",
+    "size": 250483
+  },
+  {
+    "domain": "uni-muenchen.de",
+    "status": "ok",
+    "size": 16577
+  },
+  {
+    "domain": "uni-lj.si",
+    "status": "ok",
+    "size": 74877
+  },
+  {
+    "domain": "uni-heidelberg.de",
+    "status": "ok",
+    "size": 669520
+  },
+  {
+    "domain": "uni-stuttgart.de",
+    "status": "ok",
+    "size": 116038
+  },
+  {
+    "domain": "unibo.it",
+    "status": "ok",
+    "size": 139616
+  },
+  {
+    "domain": "unicamp.br",
+    "status": "ok",
+    "size": 226662
+  },
+  {
+    "domain": "unifr.ch",
+    "status": "ok",
+    "size": 42450
+  },
+  {
+    "domain": "unistra.fr",
+    "status": "ok",
+    "size": 74131
+  },
+  {
+    "domain": "unipd.it",
+    "status": "ok",
+    "size": 77727
+  },
+  {
+    "domain": "unifrance.org",
+    "status": "ok",
+    "size": 87879
+  },
+  {
+    "domain": "unisa.it",
+    "status": "failed"
+  },
+  {
+    "domain": "univie.ac.at",
+    "status": "ok",
+    "size": 405071
+  },
+  {
+    "domain": "unl.pt",
+    "status": "failed"
+  },
+  {
+    "domain": "unlp.edu.ar",
+    "status": "ok",
+    "size": 296480
+  },
+  {
+    "domain": "unsplash.com",
+    "status": "ok",
+    "size": 787545
+  },
+  {
+    "domain": "unsw.edu.au",
+    "status": "ok",
+    "size": 204602
+  },
+  {
+    "domain": "unt.edu",
+    "status": "ok",
+    "size": 67466
+  },
+  {
+    "domain": "uol.com.br",
+    "status": "ok",
+    "size": 26184
+  },
+  {
+    "domain": "uoa.gr",
+    "status": "ok",
+    "size": 106689
+  },
+  {
+    "domain": "upc.edu",
+    "status": "ok",
+    "size": 39854
+  },
+  {
+    "domain": "upenn.edu",
+    "status": "ok",
+    "size": 133429
+  },
+  {
+    "domain": "uq.edu.au",
+    "status": "ok",
+    "size": 61975
+  },
+  {
+    "domain": "us.com",
+    "status": "failed"
+  },
+  {
+    "domain": "us.es",
+    "status": "failed"
+  },
+  {
+    "domain": "usc.edu",
+    "status": "ok",
+    "size": 295469
+  },
+  {
+    "domain": "uscourts.gov",
+    "status": "ok",
+    "size": 226765
+  },
+  {
+    "domain": "usda.gov",
+    "status": "ok",
+    "size": 170829
+  },
+  {
+    "domain": "uservoice.com",
+    "status": "ok",
+    "size": 61249
+  },
+  {
+    "domain": "usgs.gov",
+    "status": "failed"
+  },
+  {
+    "domain": "utah.gov",
+    "status": "ok",
+    "size": 5944
+  },
+  {
+    "domain": "usp.br",
+    "status": "ok",
+    "size": 105699
+  },
+  {
+    "domain": "usps.com",
+    "status": "ok",
+    "size": 117476
+  },
+  {
+    "domain": "usu.edu",
+    "status": "ok",
+    "size": 58303
+  },
+  {
+    "domain": "ut.ac.ir",
+    "status": "ok",
+    "size": 51860
+  },
+  {
+    "domain": "utah.edu",
+    "status": "ok",
+    "size": 46229
+  },
+  {
+    "domain": "utexas.edu",
+    "status": "ok",
+    "size": 93989
+  },
+  {
+    "domain": "utoronto.ca",
+    "status": "ok",
+    "size": 128691
+  },
+  {
+    "domain": "uv.es",
+    "status": "failed"
+  },
+  {
+    "domain": "uvic.ca",
+    "status": "ok",
+    "size": 136156
+  },
+  {
+    "domain": "uw.edu.pl",
+    "status": "failed"
+  },
+  {
+    "domain": "uzh.ch",
+    "status": "ok",
+    "size": 33520
+  },
+  {
+    "domain": "uwaterloo.ca",
+    "status": "ok",
+    "size": 123672
+  },
+  {
+    "domain": "v2ex.com",
+    "status": "ok",
+    "size": 104722
+  },
+  {
+    "domain": "vecteezy.com",
+    "status": "ok",
+    "size": 1063493
+  },
+  {
+    "domain": "vercel.app",
+    "status": "ok",
+    "size": 181170
+  },
+  {
+    "domain": "vietnamplus.vn",
+    "status": "failed"
+  },
+  {
+    "domain": "virginia.gov",
+    "status": "ok",
+    "size": 64202
+  },
+  {
+    "domain": "virginia.edu",
+    "status": "ok",
+    "size": 50568
+  },
+  {
+    "domain": "vnexpress.net",
+    "status": "ok",
+    "size": 342755
+  },
+  {
+    "domain": "voanews.com",
+    "status": "ok",
+    "size": 75461
+  },
+  {
+    "domain": "vt.edu",
+    "status": "ok",
+    "size": 101718
+  },
+  {
+    "domain": "washington.edu",
+    "status": "ok",
+    "size": 78224
+  },
+  {
+    "domain": "wa.gov",
+    "status": "ok",
+    "size": 63921
+  },
+  {
+    "domain": "walla.co.il",
+    "status": "ok",
+    "size": 631157
+  },
+  {
+    "domain": "web.app",
+    "status": "ok",
+    "size": 10730
+  },
+  {
+    "domain": "weebly.com",
+    "status": "ok",
+    "size": 123536
+  },
+  {
+    "domain": "weblio.jp",
+    "status": "ok",
+    "size": 88864
+  },
+  {
+    "domain": "wikidot.com",
+    "status": "failed"
+  },
+  {
+    "domain": "wikileaks.org",
+    "status": "ok",
+    "size": 28349
+  },
+  {
+    "domain": "wikipedia.org",
+    "status": "ok",
+    "size": 192269
+  },
+  {
+    "domain": "wikimedia.org",
+    "status": "ok",
+    "size": 47942
+  },
+  {
+    "domain": "wikinews.org",
+    "status": "ok",
+    "size": 61786
+  },
+  {
+    "domain": "wikiquote.org",
+    "status": "ok",
+    "size": 66004
+  },
+  {
+    "domain": "wikivoyage.org",
+    "status": "ok",
+    "size": 61501
+  },
+  {
+    "domain": "wikiversity.org",
+    "status": "ok",
+    "size": 60484
+  },
+  {
+    "domain": "wiktionary.org",
+    "status": "ok",
+    "size": 73974
+  },
+  {
+    "domain": "wisc.edu",
+    "status": "ok",
+    "size": 75387
+  },
+  {
+    "domain": "worldbank.org",
+    "status": "ok",
+    "size": 39338
+  },
+  {
+    "domain": "wix.com",
+    "status": "ok",
+    "size": 2343875
+  },
+  {
+    "domain": "wordpress.org",
+    "status": "ok",
+    "size": 171858
+  },
+  {
+    "domain": "workplace.com",
+    "status": "ok",
+    "size": 172964
+  },
+  {
+    "domain": "wustl.edu",
+    "status": "ok",
+    "size": 82484
+  },
+  {
+    "domain": "xrea.com",
+    "status": "ok",
+    "size": 34502
+  },
+  {
+    "domain": "www.gov.uk",
+    "status": "ok",
+    "size": 85149
+  },
+  {
+    "domain": "xsrv.jp",
+    "status": "ok",
+    "size": 354330
+  },
+  {
+    "domain": "yahoo.com",
+    "status": "ok",
+    "size": 257203
+  },
+  {
+    "domain": "yahoo.co.jp",
+    "status": "ok",
+    "size": 32515
+  },
+  {
+    "domain": "yale.edu",
+    "status": "ok",
+    "size": 95988
+  },
+  {
+    "domain": "yandex.ru",
+    "status": "ok",
+    "size": 1353895
+  },
+  {
+    "domain": "youtube.com",
+    "status": "ok",
+    "size": 683488
+  },
+  {
+    "domain": "yorku.ca",
+    "status": "ok",
+    "size": 131198
+  },
+  {
+    "domain": "zenit.org",
+    "status": "ok",
+    "size": 147239
+  },
+  {
+    "domain": "zenfolio.com",
+    "status": "ok",
+    "size": 445898
+  }
+]

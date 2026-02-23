@@ -1,0 +1,496 @@
+{
+  "crawl_id": "CC-MAIN-2026-08",
+  "total_domains_in_list": 428,
+  "domains_analyzed": 428,
+  "domains_with_color_data": 240,
+  "domains_no_color_data": 188,
+  "domains_failed": 0,
+  "total_unique_pairings": 4327,
+  "total_failing_normal": 1771,
+  "total_failing_large": 1180,
+  "mean_pass_rate_normal": 59.8,
+  "median_pass_rate_normal": 62.7,
+  "min_pass_rate_normal": 0.0,
+  "max_pass_rate_normal": 100.0,
+  "mean_pass_rate_large": 69.7,
+  "median_pass_rate_large": 74.0,
+  "pct_fully_compliant_normal": 20.4,
+  "pct_above_90_normal": 20.8,
+  "pct_above_75_normal": 32.5,
+  "pct_below_50_normal": 26.2,
+  "pass_rate_distribution": {
+    "0-25%": 30,
+    "25-50%": 33,
+    "50-75%": 99,
+    "75-90%": 28,
+    "90-99%": 1,
+    "100%": 49
+  },
+  "category_analysis": {
+    "E-commerce": {
+      "count": 5,
+      "avg_pass_rate": 64.1,
+      "median_pass_rate": 66.7,
+      "fully_compliant": 0,
+      "below_50_pct": 0
+    },
+    "EU Institutions": {
+      "count": 1,
+      "avg_pass_rate": 66.7,
+      "median_pass_rate": 66.7,
+      "fully_compliant": 0,
+      "below_50_pct": 0
+    },
+    "Education": {
+      "count": 47,
+      "avg_pass_rate": 63.7,
+      "median_pass_rate": 64.7,
+      "fully_compliant": 14,
+      "below_50_pct": 10
+    },
+    "Government": {
+      "count": 14,
+      "avg_pass_rate": 49.7,
+      "median_pass_rate": 54.5,
+      "fully_compliant": 1,
+      "below_50_pct": 4
+    },
+    "Hosting/Platform": {
+      "count": 11,
+      "avg_pass_rate": 44.6,
+      "median_pass_rate": 43.3,
+      "fully_compliant": 2,
+      "below_50_pct": 6
+    },
+    "News/Media": {
+      "count": 10,
+      "avg_pass_rate": 61.7,
+      "median_pass_rate": 75.0,
+      "fully_compliant": 1,
+      "below_50_pct": 4
+    },
+    "Open Knowledge": {
+      "count": 7,
+      "avg_pass_rate": 52.4,
+      "median_pass_rate": 50.0,
+      "fully_compliant": 0,
+      "below_50_pct": 0
+    },
+    "Other": {
+      "count": 134,
+      "avg_pass_rate": 61.5,
+      "median_pass_rate": 64.7,
+      "fully_compliant": 30,
+      "below_50_pct": 35
+    },
+    "Research": {
+      "count": 1,
+      "avg_pass_rate": 72.2,
+      "median_pass_rate": 72.2,
+      "fully_compliant": 0,
+      "below_50_pct": 0
+    },
+    "Technology": {
+      "count": 10,
+      "avg_pass_rate": 47.7,
+      "median_pass_rate": 50.0,
+      "fully_compliant": 1,
+      "below_50_pct": 4
+    }
+  },
+  "worst_offenders": [
+    {
+      "domain": "adelaide.edu.au",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "rgb(255,255,255)",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "alberta.ca",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "rgba(0, 0, 0, 0)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "af.mil",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "rgba(0,0,0,.08)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "copernicus.org",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 4.13,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#0072BC",
+        "ratio": 4.13
+      }
+    },
+    {
+      "domain": "github.io",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 4.02,
+      "example_failure": {
+        "foreground": "#d4582a",
+        "background": "#ffffff (assumed)",
+        "ratio": 4.02
+      }
+    },
+    {
+      "domain": "gamer.com.tw",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#0009",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "kit.edu",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#fff",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "iol.pt",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 3.77,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#0066cc",
+        "ratio": 3.77
+      }
+    },
+    {
+      "domain": "mts.ru",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#000000",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "ncl.ac.uk",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 2,
+      "fail_normal": 2,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#fff",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "netlify.app",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 4.35,
+      "example_failure": {
+        "foreground": "#666",
+        "background": "#e0e0e0",
+        "ratio": 4.35
+      }
+    },
+    {
+      "domain": "nyu.edu",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#fff",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "ovh.net",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#FEFFFF",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "puma.com",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 2,
+      "fail_normal": 2,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#000000",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "perfil.com",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "rgba(0,0,0,.1)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "nfl.com",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.63,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#143352",
+        "ratio": 1.63
+      }
+    },
+    {
+      "domain": "rtp.pt",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 3,
+      "fail_normal": 3,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "#FFFFFF",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "senate.gov",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.0,
+      "example_failure": {
+        "foreground": "white",
+        "background": "#ffffff (assumed)",
+        "ratio": 1.0
+      }
+    },
+    {
+      "domain": "shopify.com",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 1.06,
+      "example_failure": {
+        "foreground": "#000000 (assumed)",
+        "background": "#000a1e",
+        "ratio": 1.06
+      }
+    },
+    {
+      "domain": "substack.com",
+      "pass_rate_normal": 0.0,
+      "total_pairings": 1,
+      "fail_normal": 1,
+      "worst_ratio": 4.0,
+      "example_failure": {
+        "foreground": "white",
+        "background": "red",
+        "ratio": 4.0
+      }
+    }
+  ],
+  "fully_compliant_sites": [
+    {
+      "domain": "desktopnexus.com",
+      "total_pairings": 6,
+      "mean_ratio": 8.44
+    },
+    {
+      "domain": "hatenablog.com",
+      "total_pairings": 6,
+      "mean_ratio": 13.14
+    },
+    {
+      "domain": "baidu.com",
+      "total_pairings": 4,
+      "mean_ratio": 17.89
+    },
+    {
+      "domain": "craigslist.org",
+      "total_pairings": 4,
+      "mean_ratio": 12.33
+    },
+    {
+      "domain": "fu-berlin.de",
+      "total_pairings": 4,
+      "mean_ratio": 11.21
+    },
+    {
+      "domain": "tokyo.lg.jp",
+      "total_pairings": 4,
+      "mean_ratio": 14.15
+    },
+    {
+      "domain": "unt.edu",
+      "total_pairings": 4,
+      "mean_ratio": 8.54
+    },
+    {
+      "domain": "prnewswire.com",
+      "total_pairings": 3,
+      "mean_ratio": 13.57
+    },
+    {
+      "domain": "anu.edu.au",
+      "total_pairings": 2,
+      "mean_ratio": 19.52
+    },
+    {
+      "domain": "google.cn",
+      "total_pairings": 2,
+      "mean_ratio": 12.77
+    },
+    {
+      "domain": "gov.sk",
+      "total_pairings": 2,
+      "mean_ratio": 14.62
+    },
+    {
+      "domain": "gutenberg.org",
+      "total_pairings": 2,
+      "mean_ratio": 16.82
+    },
+    {
+      "domain": "hotels.com",
+      "total_pairings": 2,
+      "mean_ratio": 20.56
+    },
+    {
+      "domain": "ibm.com",
+      "total_pairings": 2,
+      "mean_ratio": 13.37
+    },
+    {
+      "domain": "lenovo.com",
+      "total_pairings": 2,
+      "mean_ratio": 16.51
+    },
+    {
+      "domain": "msu.edu",
+      "total_pairings": 2,
+      "mean_ratio": 19.23
+    },
+    {
+      "domain": "ning.com",
+      "total_pairings": 2,
+      "mean_ratio": 13.92
+    },
+    {
+      "domain": "st-andrews.ac.uk",
+      "total_pairings": 2,
+      "mean_ratio": 12.95
+    },
+    {
+      "domain": "ugr.es",
+      "total_pairings": 2,
+      "mean_ratio": 15.91
+    },
+    {
+      "domain": "yale.edu",
+      "total_pairings": 2,
+      "mean_ratio": 8.88
+    },
+    {
+      "domain": "admin.ch",
+      "total_pairings": 1,
+      "mean_ratio": 21.0
+    },
+    {
+      "domain": "answers.com",
+      "total_pairings": 1,
+      "mean_ratio": 16.21
+    },
+    {
+      "domain": "berkeley.edu",
+      "total_pairings": 1,
+      "mean_ratio": 12.02
+    },
+    {
+      "domain": "buzzsprout.com",
+      "total_pairings": 1,
+      "mean_ratio": 17.62
+    },
+    {
+      "domain": "culture.gouv.fr",
+      "total_pairings": 1,
+      "mean_ratio": 18.04
+    },
+    {
+      "domain": "dmm.com",
+      "total_pairings": 1,
+      "mean_ratio": 7.21
+    },
+    {
+      "domain": "gnome.org",
+      "total_pairings": 1,
+      "mean_ratio": 4.62
+    },
+    {
+      "domain": "kyoto-u.ac.jp",
+      "total_pairings": 1,
+      "mean_ratio": 12.02
+    },
+    {
+      "domain": "lublin.pl",
+      "total_pairings": 1,
+      "mean_ratio": 21.0
+    },
+    {
+      "domain": "mynavi.jp",
+      "total_pairings": 1,
+      "mean_ratio": 12.02
+    }
+  ],
+  "min_worst_ratio_across_sites": 1.0
+}
