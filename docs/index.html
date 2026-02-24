@@ -75,6 +75,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   /* ── Reset ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -112,6 +117,10 @@
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     overflow-wrap: break-word;
+  }
+
+  pre code {
+    font-size: 0.75em;
   }
 
   .sr-only {
@@ -230,8 +239,18 @@
     color: var(--text);
     border-bottom-color: var(--accent);
   }
-  [role="tabpanel"] { display: none; }
-  [role="tabpanel"].active { display: block; }
+  [role="tabpanel"] {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+  [role="tabpanel"].active {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    position: static;
+  }
   [role="tabpanel"]:focus { outline: none; }
 
   /* ── Stats grid: 2-col on mobile ── */
@@ -345,8 +364,10 @@
   .bar-fill {
     width: 100%;
     border-radius: 3px 3px 0 0;
-    transition: height 0.5s ease;
     min-height: 2px;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
   }
   .bar-labels {
     display: flex;
@@ -746,8 +767,8 @@
 <nav aria-label="Dashboard sections">
   <div role="tablist" aria-label="Audit results">
     <button role="tab" id="tab-overview" aria-selected="true" aria-controls="panel-overview">Overview</button>
-    <button role="tab" id="tab-distribution" aria-selected="false" aria-controls="panel-distribution" tabindex="-1">Distribution</button>
-    <button role="tab" id="tab-categories" aria-selected="false" aria-controls="panel-categories" tabindex="-1">By Category</button>
+    <button role="tab" id="tab-distribution" aria-selected="false" aria-controls="panel-distribution" tabindex="-1">Spread</button>
+    <button role="tab" id="tab-categories" aria-selected="false" aria-controls="panel-categories" tabindex="-1">Categories</button>
     <button role="tab" id="tab-notable" aria-selected="false" aria-controls="panel-notable" tabindex="-1">Notable Sites</button>
   </div>
 </nav>
@@ -938,6 +959,20 @@
     tab.removeAttribute("tabindex");
     document.getElementById(tab.getAttribute("aria-controls")).classList.add("active");
     tab.focus();
+
+    /* Replay bar grow animations */
+    var panel = document.getElementById(tab.getAttribute("aria-controls"));
+    var bars = panel.querySelectorAll(".bar-fill");
+    bars.forEach(function (b) {
+      b.style.transition = "none";
+      b.style.transform = "scaleY(0)";
+    });
+    setTimeout(function () {
+      bars.forEach(function (b) {
+        b.style.transition = "transform 0.5s ease";
+        b.style.transform = "scaleY(1)";
+      });
+    }, 50);
   }
 
   tabs.forEach(function (tab) {
