@@ -35,6 +35,8 @@ The query:
 
 ## Quick Start
 
+See [ATHENA_SETUP](./ATHENA_SETUP.md) for instructions for setting up Amazon Athena.
+
 Step 1 (`01_fetch_index.py`) supports three modes for querying the Columnar Index:
 
 ```bash
