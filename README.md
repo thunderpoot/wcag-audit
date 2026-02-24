@@ -17,7 +17,7 @@ This pipeline:
 
 ## The Columnar Index
 
-The pipeline uses Common Crawl's [Columnar Index](https://commoncrawl.org/blog/columnar-index-for-the-common-crawl), a Parquet-based representation of the crawl index stored on S3 at
+The pipeline uses Common Crawl's [Columnar Index](https://commoncrawl.org/columnar-index), a Parquet-based representation of the crawl index stored on S3 at
 `s3://commoncrawl/cc-index/table/cc-main/warc/`. A single Athena SQL query finds all 500 homepage captures in one pass.
 
 The query:

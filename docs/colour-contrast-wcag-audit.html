@@ -471,7 +471,7 @@
 
   <h3>2.2 Data Retrieval</h3>
 
-  <p>For each domain, we queried Common Crawl&rsquo;s <a href="https://commoncrawl.org/blog/columnar-index-for-the-common-crawl" rel="noopener noreferrer" target="_blank">Columnar Index</a> to locate an archived capture of the domain&rsquo;s homepage from the CC-MAIN-2026-08 crawl. The Columnar Index is a Parquet-based representation of the crawl index stored on <abbr title="Amazon Simple Storage Service">S3</abbr>, queryable via Amazon Athena. A single <abbr title="Structured Query Language">SQL</abbr> query across all 500 domains returns the <abbr title="Web ARChive">WARC</abbr> filename, byte offset, and record length for each homepage capture, identifying the exact location of the page content within Common Crawl&rsquo;s distributed WARC archive.</p>
+  <p>For each domain, we queried Common Crawl&rsquo;s <a href="https://commoncrawl.org/columnar-index" rel="noopener noreferrer" target="_blank">Columnar Index</a> to locate an archived capture of the domain&rsquo;s homepage from the CC-MAIN-2026-08 crawl. The Columnar Index is a Parquet-based representation of the crawl index stored on <abbr title="Amazon Simple Storage Service">S3</abbr>, queryable via Amazon Athena. A single <abbr title="Structured Query Language">SQL</abbr> query across all 500 domains returns the <abbr title="Web ARChive">WARC</abbr> filename, byte offset, and record length for each homepage capture, identifying the exact location of the page content within Common Crawl&rsquo;s distributed WARC archive.</p>
 
   <p>We then fetched the actual <abbr title="HyperText Markup Language">HTML</abbr> content using <abbr title="Hypertext Transfer Protocol">HTTP</abbr> byte-range requests to <code>data.commoncrawl.org</code>, extracting just the relevant WARC record from the larger archive file. This is the standard method for accessing individual pages within Common Crawl&rsquo;s petabyte-scale archive. Each WARC record contains the original HTTP response headers and body, from which we extracted the HTML document.</p>
 
@@ -721,7 +721,7 @@
     <p>2. W3C. (2023). Web Content Accessibility Guidelines (WCAG) 2.2. <a href="https://www.w3.org/TR/WCAG22/" rel="noopener noreferrer" target="_blank">https://www.w3.org/TR/WCAG22/</a></p>
     <p>3. Common Crawl Foundation. Common Crawl. <a href="https://commoncrawl.org" rel="noopener noreferrer" target="_blank">https://commoncrawl.org</a></p>
     <p>4. Common Crawl. CC-MAIN-2026-08 Crawl Statistics. <a href="https://commoncrawl.github.io/cc-crawl-statistics/" rel="noopener noreferrer" target="_blank">https://commoncrawl.github.io/cc-crawl-statistics/</a></p>
-    <p>5. Common Crawl. Columnar Index documentation. <a href="https://commoncrawl.org/blog/columnar-index-for-the-common-crawl" rel="noopener noreferrer" target="_blank">https://commoncrawl.org/blog/columnar-index-for-the-common-crawl</a></p>
+    <p>5. Common Crawl. Columnar Index documentation. <a href="https://commoncrawl.org/columnar-index" rel="noopener noreferrer" target="_blank">https://commoncrawl.org/columnar-index</a></p>
     <p>6. W3C. (2018). Understanding SC 1.4.3: Contrast (Minimum). <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html</a></p>
   </div>
 
