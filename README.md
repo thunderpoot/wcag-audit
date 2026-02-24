@@ -116,5 +116,6 @@ The interactive dashboard (`wcag-dashboard.html`) visualises the audit results a
 
 ## Licence
 
-This code is released under the MIT Licence.
-The Common Crawl data is available under the [Common Crawl Terms of Use](https://commoncrawl.org/terms-of-use).
+- This code is released under the MIT Licence.
+- Site content is dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+- Common Crawl data is available under the [Common Crawl Terms of Use](https://commoncrawl.org/terms-of-use).
