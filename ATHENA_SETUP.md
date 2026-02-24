@@ -1,6 +1,6 @@
 # Athena Setup
 
-![Athena](https://i.ibb.co/LdcVr1rs/athena.png)
+![Athena](https://i.ibb.co/MDz8CpQL/athena-sm.png)
 
 # Athena Setup
 
