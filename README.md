@@ -1,6 +1,6 @@
 # WCAG 2.1/2.2 Level AA Colour Contrast Audit of Common Crawl's Top 500 Domains
 
-An automated pipeline for assessing WCAG 2.1/2.2 Level AA colour contrast compliance across the 500 most-crawled registered domains in Common Crawl's latest monthly crawl (CC-MAIN-2026-08), using archived copies from Common Crawl's WARC data.
+An automated pipeline for assessing WCAG 2.1/2.2 Level AA colour contrast compliance across the 500 most-crawled registered domains in Common Crawl's February 2026 crawl archive (CC-MAIN-2026-08), using archived copies from Common Crawl's WARC data.
 
 ## Overview
 
