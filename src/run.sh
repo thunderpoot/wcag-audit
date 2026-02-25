@@ -79,7 +79,7 @@ python3 02_fetch_warc.py --workers "$WARC_WORKERS" --delay 0.1 --resume
 echo ""
 
 echo "Step 3/4: Analysing colour contrast compliance..."
-python3 03_analyze_wcag.py --workers 8
+python3 03_analyse_wcag.py --workers 8
 echo ""
 
 echo "Step 4/4: Generating summary report..."

@@ -462,6 +462,12 @@
 
   <p>By sourcing all page content from Common Crawl&rsquo;s WARC files, our analysis is fully reproducible. Any researcher can re-run our pipeline against the same <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">CC-MAIN-2026-08</a> archive and obtain identical results. This approach also eliminates any load on the target websites themselves.</p>
 
+  <p>This work investigates whether meaningful, deterministic accessibility analysis can be performed directly from web crawl archives without rendering live pages. Using archived HTML from Common Crawl, we evaluate declared foreground and background colour pairings against WCAG contrast thresholds at web scale.</p>
+
+  <h3>1.1 Disclosure</h3>
+
+  <p>This project was developed with the assistance of Claude Opus 4.6 Extended (Anthropic). The analysis pipeline, dashboard, article, and supporting code were produced through an iterative collaborative process between the author and an AI assistant.</p>
+
   <!-- ── 2. Methodology ── -->
   <h2>2. Methodology</h2>
 
@@ -491,6 +497,8 @@
   <p>Colour values were parsed from all standard CSS colour formats: hexadecimal notation (<code>#RGB</code>, <code>#RRGGBB</code>, <code>#RGBA</code>, <code>#RRGGBBAA</code>), the <code>rgb()</code> and <code>rgba()</code> functions, the <code>hsl()</code> and <code>hsla()</code> functions, and all 148 CSS named colours. Non-colour values such as <code>transparent</code>, <code>inherit</code>, <code>currentColor</code>, and <code>initial</code> were excluded from analysis.</p>
 
   <h3>2.4 Colour Pairing and Contrast Calculation</h3>
+
+  <p>This analysis measures declared colour contrast properties rather than rendered visual presentation.</p>
 
   <p>Extracted colour declarations were paired into foreground/background combinations using the following rules:</p>
 
@@ -712,6 +720,12 @@
   <p>We conducted a large-scale WCAG 2.1 Level AA colour contrast audit of the 500 most frequently crawled domains in Common Crawl&rsquo;s CC-MAIN-2026-08 archive, analysing 4,327 unique colour pairings across 240 homepages. Our findings reveal that 79.6% of sites contain at least one colour pairing that fails the 4.5:1 normal text contrast threshold, with a median per-site pass rate of 62.7%.</p>
 
   <p>Whilst static CSS analysis provides only a partial picture of a page&rsquo;s true accessibility, these results establish a reproducible baseline for tracking colour contrast compliance over time. Future work could extend this analysis to incorporate external stylesheets, JavaScript-rendered styles, and per-element rendering context, building toward a comprehensive picture of colour accessibility on the open web.</p>
+
+  <p>Many failing pairings cluster near the WCAG threshold, which suggests that minor colour adjustments could substantially improve compliance without major redesign.</p>
+
+  <p>This analysis indicates that meaningful accessibility research can be performed directly on crawl archives, without re-crawling or executing live web content.</p>
+
+  <p>Future work includes longitudinal comparison across crawl releases and integration of rendered-style analysis to compare declared and computed accessibility properties.</p>
 
   <!-- ── References ── -->
   <h2>References</h2>

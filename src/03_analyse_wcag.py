@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Step 3: WCAG 2.1/2.2 Level AA color contrast analysis.
+Step 3: WCAG 2.1/2.2 Level AA colour contrast analysis.
 
-Parses each archived HTML file to extract CSS color declarations,
+Parses each archived HTML file to extract CSS colour declarations,
 identifies foreground/background pairings, calculates contrast ratios,
 and evaluates compliance against WCAG AA thresholds.
 
@@ -12,7 +12,7 @@ WCAG 2.1/2.2 Level AA thresholds:
   - UI components:   3.0:1 contrast ratio
 
 Usage:
-    python3 03_analyze_wcag.py [--workers 8]
+    python3 03_analyse_wcag.py [--workers 8]
 """
 
 import json
@@ -35,7 +35,7 @@ CONTRAST_NORMAL = 4.5
 CONTRAST_LARGE = 3.0
 
 # ---------------------------------------------------------------------------
-# CSS Named Colors (full W3C list)
+# CSS Named Colours (full W3C list)
 # ---------------------------------------------------------------------------
 NAMED_COLORS = {
     "aliceblue": (240, 248, 255), "antiquewhite": (250, 235, 215),
@@ -115,7 +115,7 @@ NAMED_COLORS = {
 }
 
 # ---------------------------------------------------------------------------
-# Color parsing
+# Colour parsing
 # ---------------------------------------------------------------------------
 
 def parse_hex(s):
@@ -238,7 +238,7 @@ def parse_color(value):
     if value.startswith("hsl"):
         return parse_hsl(value)
 
-    # Named colors
+    # Named colours
     if value in NAMED_COLORS:
         return NAMED_COLORS[value]
 
@@ -267,7 +267,7 @@ def relative_luminance(rgb):
 
 def contrast_ratio(rgb1, rgb2):
     """
-    Calculate contrast ratio between two colors per WCAG 2.1.
+    Calculate contrast ratio between two colours per WCAG 2.1.
     https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio
     Returns a value >= 1.0 (1:1 means identical).
     """
@@ -413,9 +413,9 @@ def extract_inline_colors(style_str):
 # Analysis engine
 # ---------------------------------------------------------------------------
 
-def analyze_html(html_content):
+def analyse_html(html_content):
     """
-    Analyze an HTML document for WCAG AA color contrast compliance.
+    analyse an HTML document for WCAG AA color contrast compliance.
 
     Returns a dict with:
       - pairings: list of color pairings found with contrast ratios
@@ -546,14 +546,14 @@ def analyze_html(html_content):
 
 
 def process_file(args):
-    """Analyze a single HTML file."""
+    """analyse a single HTML file."""
     filepath, domain = args
     try:
         with open(filepath, "r", encoding="utf-8", errors="replace") as f:
             html = f.read()
-        result = analyze_html(html)
+        result = analyse_html(html)
         result["domain"] = domain
-        result["status"] = "analyzed"
+        result["status"] = "analysed"
         return result
     except Exception as e:
         return {"domain": domain, "status": "error", "error": str(e)}
@@ -575,7 +575,7 @@ def main():
             filepath = os.path.join(HTML_DIR, fname)
             html_files.append((filepath, domain))
 
-    print(f"Found {len(html_files)} HTML files to analyze")
+    print(f"Found {len(html_files)} HTML files to analyse")
 
     results = []
 
@@ -588,7 +588,7 @@ def main():
             try:
                 result = future.result()
                 results.append(result)
-                if result["status"] == "analyzed":
+                if result["status"] == "analysed":
                     n = result["total_pairings"]
                     rate = result["pass_rate_normal"]
                     if rate is not None:
@@ -627,10 +627,10 @@ def main():
     with open(full_path, "w") as f:
         json.dump(results_full, f, indent=2)
 
-    analyzed = sum(1 for r in results if r.get("status") == "analyzed")
+    analysed = sum(1 for r in results if r.get("status") == "analysed")
     with_colors = sum(1 for r in results
-                      if r.get("status") == "analyzed" and r.get("total_pairings", 0) > 0)
-    print(f"\nDone. Analyzed: {analyzed}, With color data: {with_colors}")
+                      if r.get("status") == "analysed" and r.get("total_pairings", 0) > 0)
+    print(f"\nDone. analysed: {analysed}, With color data: {with_colors}")
     print(f"Results: {RESULTS_FILE}")
     print(f"Full results: {full_path}")
 

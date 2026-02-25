@@ -13,7 +13,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="WCAG AA Colour Contrast Audit">
-<meta property="og:description" content="Four in ten colour pairings fail WCAG AA contrast thresholds. Static analysis of 240 top domains from the Common Crawl archive.">
+<meta property="og:description" content="Four in ten colour pairings fall below WCAG AA contrast thresholds. Static analysis of 240 top domains from the Common Crawl archive.">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://thunderpoot.github.io/wcag-audit/img/masthead.webp">
@@ -30,7 +30,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WCAG AA Colour Contrast Audit">
-<meta name="twitter:description" content="Four in ten colour pairings fail WCAG AA contrast thresholds across 240 top domains.">
+<meta name="twitter:description" content="Four in ten colour pairings fall below WCAG AA contrast thresholds across 240 top domains.">
 <meta name="twitter:image" content="https://thunderpoot.github.io/wcag-audit/img/masthead.webp">
 
 <!-- Structured Data -->
@@ -39,7 +39,7 @@
   "@context": "https://schema.org",
   "@type": "ScholarlyArticle",
   "headline": "WCAG AA Colour Contrast Audit of the Top 500 Domains",
-  "alternativeHeadline": "Four in ten colour pairings fail contrast thresholds",
+  "alternativeHeadline": "Four in ten colour pairings fall below contrast thresholds",
   "image": "https://thunderpoot.github.io/wcag-audit/img/masthead.webp",
   "author": {
     "@type": "Person",
@@ -812,8 +812,9 @@
   </div>
 
   <section aria-labelledby="headline-findings">
-    <h2 id="headline-findings">Four in ten colour pairings fail contrast thresholds</h2>
+    <h2 id="headline-findings">Four in ten colour pairings fall below WCAG contrast thresholds</h2>
     <div class="prose">
+      <p>Results above describe only domains where inline or embedded CSS declared at least one foreground or background colour pairing. Sites styled entirely via external stylesheets are excluded from pairing analysis.</p>
       <p>Across the 240 domains where colour pairings were extractable, the <strong>median pass rate for normal text contrast is 62.7%</strong>. Roughly one in five sites (20.4%) achieve full compliance, whilst over a quarter (26.2%) fail more than half their pairings.</p>
       <p>The large text threshold is more forgiving: the median jumps to 74.0%. This gap matters because much of the web's low-contrast text appears in smaller <abbr title="User Interface">UI</abbr> elements like navigation, footers, and form labels.</p>
       <p>Of the 4,327 unique colour pairings extracted, <strong>1,771 (40.9%) fail</strong> the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" rel="noopener noreferrer" target="_blank">4.5:1 normal text threshold</a>. Many failures cluster around ratios of 1.0:1, caused by white-on-white or black-on-black from assumed default backgrounds.</p>
@@ -885,6 +886,8 @@
     <figure>
       <div class="hbar-chart" id="cat-chart" role="img" aria-label="Horizontal bar chart of mean pass rates by domain category"></div>
     </figure>
+    <br>
+    <p>Domains were <a target="_blank" rel="noreferrer nofollow" href="https://github.com/thunderpoot/wcag-audit/blob/1d0728e61cdd8d6daf9287f2e5afd340ae0defe5/src/04_generate_report.py#L28-L107">classified</a> by TLD pattern matching (e.g. <code>.edu</code> and <code>.ac.uk</code> for Education, <code>.gov</code> and <code>.gouv.fr</code> for Government) and a manually curated list of known domains for the remaining categories; domains that matched none of these rules were placed in "Other", which accounts for the majority of the sample.</p>
   </section>
 
   <section aria-labelledby="heading-cat-table">
@@ -934,6 +937,7 @@
       <p>This audit examines only inline <code>style</code> attributes and embedded <code>&lt;style&gt;</code> blocks found in archived homepage captures. It does not fetch external stylesheets, execute JavaScript, or render the page in a browser. As a result, the analysis captures a subset of each site's true colour landscape: the pairings that are declaratively present in the <abbr title="HyperText Markup Language">HTML</abbr> document itself.</p>
       <p>Where a foreground colour is declared without a corresponding background (or vice versa), the audit assumes the <abbr title="Cascading Style Sheets">CSS</abbr> default: white (<code>#fff</code>) for backgrounds, black (<code>#000</code>) for text. This produces a number of 1.0:1 ratio artefacts (white-on-white, black-on-black) that are not real visual failures but limitations of static analysis without rendering context.</p>
       <p>Many 0% pass rate sites in the raw data have only a single pairing at 1.0:1. The &ldquo;notable failures&rdquo; section filters these out, showing only sites whose worst pairings have ratios that suggest genuine contrast problems rather than default-assumption artefacts.</p>
+      <p>Pairings where both foreground and background colours are explicitly declared should be interpreted as higher-confidence findings.</p>
       <p>Sites that rely entirely on external stylesheets, CSS frameworks loaded via <code>&lt;link&gt;</code>, or JavaScript-driven rendering (such as single-page applications) will appear in the &ldquo;no pairings found&rdquo; category. This accounts for 188 of the 428 domains with captures, meaning the 240 analysed domains skew towards sites that use at least some inline or embedded styling.</p>
       <p>All captures were drawn from the <a href="https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-08/index.html" rel="noopener noreferrer" target="_blank">CC-MAIN-2026-08</a> crawl. Where multiple captures of the same registered domain existed, the audit preferred the <code>www</code> subdomain or bare domain over deeper subdomains, and <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> over <abbr title="Hypertext Transfer Protocol">HTTP</abbr>.</p>
     </div>

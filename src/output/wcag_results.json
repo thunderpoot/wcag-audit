@@ -12,7 +12,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "admin.ch",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -28,7 +28,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "adobe.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 12,
@@ -43,7 +43,7 @@
     "median_ratio": 9.59,
     "mean_ratio": 10.1,
     "domain": "academic.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -98,7 +98,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "adelaide.edu.au",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgb(255,255,255)",
@@ -134,7 +134,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "afternic.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -149,7 +149,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "alberta.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -185,7 +185,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 14.95,
     "domain": "163.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#999999",
@@ -221,7 +221,7 @@
     "median_ratio": 5.74,
     "mean_ratio": 8.02,
     "domain": "alibaba.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -333,7 +333,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "aif.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -348,7 +348,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "af.mil",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -384,7 +384,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "app.link",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 6,
@@ -399,7 +399,7 @@
     "median_ratio": 15.91,
     "mean_ratio": 12.73,
     "domain": "airbnb.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -454,7 +454,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "amazon.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -469,7 +469,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "archive.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -484,7 +484,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "appspot.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -499,7 +499,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "apache.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 8,
@@ -514,7 +514,7 @@
     "median_ratio": 18.33,
     "mean_ratio": 12.13,
     "domain": "android.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -588,7 +588,7 @@
     "median_ratio": 16.21,
     "mean_ratio": 16.21,
     "domain": "answers.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -604,7 +604,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "archlinux.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -619,7 +619,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 19.52,
     "domain": "anu.edu.au",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -635,7 +635,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 11.35,
     "domain": "amazonaws.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -671,7 +671,7 @@
     "median_ratio": 12.63,
     "mean_ratio": 8.87,
     "domain": "arizona.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -783,7 +783,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "army.mil",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 9,
@@ -798,7 +798,7 @@
     "median_ratio": 3.18,
     "mean_ratio": 5.75,
     "domain": "apple.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -910,7 +910,7 @@
     "median_ratio": 18.96,
     "mean_ratio": 17.89,
     "domain": "baidu.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -926,7 +926,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "banggood.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -941,7 +941,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "bayern.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -956,7 +956,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "berkeley.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -972,7 +972,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "biglobe.ne.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -987,7 +987,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "bing.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 39,
@@ -1002,7 +1002,7 @@
     "median_ratio": 5.25,
     "mean_ratio": 8.22,
     "domain": "art.pl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -1114,7 +1114,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "blizzard.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -1129,7 +1129,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "belta.by",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -1144,7 +1144,7 @@
     "median_ratio": 5.08,
     "mean_ratio": 3.41,
     "domain": "archives.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -1180,7 +1180,7 @@
     "median_ratio": 3.06,
     "mean_ratio": 7.65,
     "domain": "bibliocommons.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -1235,7 +1235,7 @@
     "median_ratio": 1.24,
     "mean_ratio": 7.75,
     "domain": "bsky.app",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -1290,7 +1290,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "bund.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -1305,7 +1305,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "bnf.fr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -1320,7 +1320,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 12.74,
     "domain": "bplaced.net",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -1356,7 +1356,7 @@
     "median_ratio": 1.6,
     "mean_ratio": 5.53,
     "domain": "azurewebsites.net",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -1449,7 +1449,7 @@
     "median_ratio": 17.62,
     "mean_ratio": 17.62,
     "domain": "buzzsprout.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -1465,7 +1465,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cafe24.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 7,
@@ -1480,7 +1480,7 @@
     "median_ratio": 2.63,
     "mean_ratio": 8.32,
     "domain": "byu.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -1573,7 +1573,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ca.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -1588,7 +1588,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "canada.ca",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -1603,7 +1603,7 @@
     "median_ratio": 8.73,
     "mean_ratio": 8.81,
     "domain": "bme.hu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -1658,7 +1658,7 @@
     "median_ratio": 10.59,
     "mean_ratio": 10.42,
     "domain": "as.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -1751,7 +1751,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cam.ac.uk",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -1766,7 +1766,7 @@
     "median_ratio": 17.22,
     "mean_ratio": 9.11,
     "domain": "cancer.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -1802,7 +1802,7 @@
     "median_ratio": 7.86,
     "mean_ratio": 8.67,
     "domain": "blogspot.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -1857,7 +1857,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ccm.net",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 18,
@@ -1872,7 +1872,7 @@
     "median_ratio": 11.53,
     "mean_ratio": 10.11,
     "domain": "cern.ch",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -1984,7 +1984,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "bundestag.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -1999,7 +1999,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cloudfront.net",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -2014,7 +2014,7 @@
     "median_ratio": 4.0,
     "mean_ratio": 3.82,
     "domain": "chinaz.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#999",
@@ -2088,7 +2088,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cnrs.fr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 68,
@@ -2103,7 +2103,7 @@
     "median_ratio": 7.88,
     "mean_ratio": 9.18,
     "domain": "atlassian.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -2215,7 +2215,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "colorado.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -2230,7 +2230,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "columbia.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 5,
@@ -2245,7 +2245,7 @@
     "median_ratio": 3.01,
     "mean_ratio": 3.22,
     "domain": "cbsnews.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -2319,7 +2319,7 @@
     "median_ratio": 2.56,
     "mean_ratio": 5.65,
     "domain": "cornell.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -2431,7 +2431,7 @@
     "median_ratio": 18.04,
     "mean_ratio": 18.04,
     "domain": "culture.gouv.fr",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -2447,7 +2447,7 @@
     "median_ratio": 4.38,
     "mean_ratio": 7.46,
     "domain": "cointelegraph.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -2559,7 +2559,7 @@
     "median_ratio": 13.08,
     "mean_ratio": 12.33,
     "domain": "craigslist.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -2575,7 +2575,7 @@
     "median_ratio": 4.13,
     "mean_ratio": 4.13,
     "domain": "copernicus.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -2611,7 +2611,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cvut.cz",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -2626,7 +2626,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "developpement-durable.gouv.fr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -2641,7 +2641,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "debian.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -2656,7 +2656,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cuni.cz",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 18,
@@ -2671,7 +2671,7 @@
     "median_ratio": 7.73,
     "mean_ratio": 8.14,
     "domain": "cuny.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -2783,7 +2783,7 @@
     "median_ratio": 5.74,
     "mean_ratio": 8.41,
     "domain": "dict.cc",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -2857,7 +2857,7 @@
     "median_ratio": 6.03,
     "mean_ratio": 9.52,
     "domain": "duke.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgba(255, 255, 255, var(--text-opacity))",
@@ -2969,7 +2969,7 @@
     "median_ratio": 5.91,
     "mean_ratio": 8.44,
     "domain": "desktopnexus.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -2985,7 +2985,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cbssports.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3000,7 +3000,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "cnet.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3015,7 +3015,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "eclipse.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -3030,7 +3030,7 @@
     "median_ratio": 12.63,
     "mean_ratio": 10.46,
     "domain": "docomo.ne.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -3066,7 +3066,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "dcinside.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3081,7 +3081,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "epfl.ch",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3096,7 +3096,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ethz.ch",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -3111,7 +3111,7 @@
     "median_ratio": 7.21,
     "mean_ratio": 7.21,
     "domain": "dmm.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -3127,7 +3127,7 @@
     "median_ratio": 9.45,
     "mean_ratio": 10.79,
     "domain": "educations.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#424242",
@@ -3182,7 +3182,7 @@
     "median_ratio": 13.08,
     "mean_ratio": 11.61,
     "domain": "entrepreneur.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -3218,7 +3218,7 @@
     "median_ratio": 4.45,
     "mean_ratio": 4.9,
     "domain": "espn.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -3330,7 +3330,7 @@
     "median_ratio": 3.95,
     "mean_ratio": 7.1,
     "domain": "excite.co.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -3442,7 +3442,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ettoday.net",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3457,7 +3457,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "fao.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3472,7 +3472,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "exblog.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 44,
@@ -3487,7 +3487,7 @@
     "median_ratio": 8.5,
     "mean_ratio": 9.61,
     "domain": "elpais.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -3599,7 +3599,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "firebaseapp.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 8,
@@ -3614,7 +3614,7 @@
     "median_ratio": 5.21,
     "mean_ratio": 7.61,
     "domain": "fandom.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -3707,7 +3707,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "flagcounter.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3722,7 +3722,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "free.fr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -3737,7 +3737,7 @@
     "median_ratio": 19.26,
     "mean_ratio": 13.75,
     "domain": "europa.eu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -3773,7 +3773,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "freebsd.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -3788,7 +3788,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "fedoraproject.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 5,
@@ -3803,7 +3803,7 @@
     "median_ratio": 6.13,
     "mean_ratio": 5.99,
     "domain": "err.ee",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -3839,7 +3839,7 @@
     "median_ratio": 4.79,
     "mean_ratio": 7.74,
     "domain": "expansion.mx",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -3951,7 +3951,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "frontiersin.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 63,
@@ -3966,7 +3966,7 @@
     "median_ratio": 11.22,
     "mean_ratio": 9.67,
     "domain": "foursquare.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -4078,7 +4078,7 @@
     "median_ratio": 10.39,
     "mean_ratio": 11.21,
     "domain": "fu-berlin.de",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -4094,7 +4094,7 @@
     "median_ratio": 4.02,
     "mean_ratio": 4.02,
     "domain": "github.io",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#d4582a",
@@ -4130,7 +4130,7 @@
     "median_ratio": 13.53,
     "mean_ratio": 11.4,
     "domain": "fau.de",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -4204,7 +4204,7 @@
     "median_ratio": 8.58,
     "mean_ratio": 8.91,
     "domain": "elespanol.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -4316,7 +4316,7 @@
     "median_ratio": 13.46,
     "mean_ratio": 10.83,
     "domain": "gatech.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -4428,7 +4428,7 @@
     "median_ratio": 4.62,
     "mean_ratio": 4.62,
     "domain": "gnome.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -4444,7 +4444,7 @@
     "median_ratio": 4.32,
     "mean_ratio": 4.91,
     "domain": "freepik.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -4556,7 +4556,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 12.77,
     "domain": "google.cn",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -4572,7 +4572,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "googlesource.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -4587,7 +4587,7 @@
     "median_ratio": 1.66,
     "mean_ratio": 7.59,
     "domain": "globalvoices.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -4642,7 +4642,7 @@
     "median_ratio": 6.4,
     "mean_ratio": 8.87,
     "domain": "globo.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -4735,7 +4735,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "gouv.qc.ca",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -4750,7 +4750,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "gamer.com.tw",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -4786,7 +4786,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "gov.bc.ca",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -4801,7 +4801,7 @@
     "median_ratio": 17.71,
     "mean_ratio": 14.62,
     "domain": "gov.sk",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -4817,7 +4817,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 16.82,
     "domain": "gutenberg.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -4833,7 +4833,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "gta5-mods.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -4848,7 +4848,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "gva.es",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -4863,7 +4863,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "habr.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -4878,7 +4878,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "github.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -4893,7 +4893,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "hatenadiary.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -4908,7 +4908,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "herokuapp.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -4923,7 +4923,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "godaddy.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -4938,7 +4938,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 7.42,
     "domain": "harvard.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -4974,7 +4974,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "hatenablog.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 11,
@@ -4989,7 +4989,7 @@
     "median_ratio": 3.12,
     "mean_ratio": 5.96,
     "domain": "hateblo.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#f9ce1d",
@@ -5101,7 +5101,7 @@
     "median_ratio": 16.1,
     "mean_ratio": 13.14,
     "domain": "hatenablog.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -5117,7 +5117,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "hse.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 25,
@@ -5132,7 +5132,7 @@
     "median_ratio": 6.32,
     "mean_ratio": 9.16,
     "domain": "google.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -5244,7 +5244,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "house.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -5259,7 +5259,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 20.56,
     "domain": "hotels.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -5275,7 +5275,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 11.69,
     "domain": "hp.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -5311,7 +5311,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "hh.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -5326,7 +5326,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "iastate.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -5341,7 +5341,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 13.37,
     "domain": "ibm.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -5357,7 +5357,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "hu-berlin.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 6,
@@ -5372,7 +5372,7 @@
     "median_ratio": 8.59,
     "mean_ratio": 10.92,
     "domain": "ibiblio.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "red",
@@ -5427,7 +5427,7 @@
     "median_ratio": 7.46,
     "mean_ratio": 7.32,
     "domain": "icm.edu.pl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,.65)",
@@ -5501,7 +5501,7 @@
     "median_ratio": 4.53,
     "mean_ratio": 6.6,
     "domain": "freelancer.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -5613,7 +5613,7 @@
     "median_ratio": 4.01,
     "mean_ratio": 6.03,
     "domain": "hypotheses.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -5725,7 +5725,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "imgur.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -5740,7 +5740,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "imdb.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -5755,7 +5755,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "in.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 6,
@@ -5770,7 +5770,7 @@
     "median_ratio": 7.46,
     "mean_ratio": 7.98,
     "domain": "illinois.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffffa6",
@@ -5825,7 +5825,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "impress.co.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -5840,7 +5840,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "indiana.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -5855,7 +5855,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ifeng.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -5870,7 +5870,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "idnes.cz",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 129,
@@ -5885,7 +5885,7 @@
     "median_ratio": 6.08,
     "mean_ratio": 8.67,
     "domain": "hindustantimes.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -5997,7 +5997,7 @@
     "median_ratio": 6.11,
     "mean_ratio": 7.65,
     "domain": "iheart.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -6109,7 +6109,7 @@
     "median_ratio": 14.31,
     "mean_ratio": 10.95,
     "domain": "indiatimes.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -6164,7 +6164,7 @@
     "median_ratio": 12.13,
     "mean_ratio": 9.65,
     "domain": "hubspot.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -6238,7 +6238,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "inform.kz",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6253,7 +6253,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "iu.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6268,7 +6268,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "inrae.fr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6283,7 +6283,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "itmedia.co.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 16,
@@ -6298,7 +6298,7 @@
     "median_ratio": 17.4,
     "mean_ratio": 14.45,
     "domain": "issuu.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#7c7af0",
@@ -6334,7 +6334,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "kde.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -6349,7 +6349,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "kit.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -6385,7 +6385,7 @@
     "median_ratio": 1.36,
     "mean_ratio": 4.97,
     "domain": "intuit.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgb(255, 255, 255)",
@@ -6459,7 +6459,7 @@
     "median_ratio": 5.04,
     "mean_ratio": 7.52,
     "domain": "jd.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -6571,7 +6571,7 @@
     "median_ratio": 3.77,
     "mean_ratio": 3.77,
     "domain": "iol.pt",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -6607,7 +6607,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "krakow.pl",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6622,7 +6622,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ku.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6637,7 +6637,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "launchpad.net",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 77,
@@ -6652,7 +6652,7 @@
     "median_ratio": 5.37,
     "mean_ratio": 7.07,
     "domain": "jotform.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -6764,7 +6764,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "kyoto-u.ac.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -6780,7 +6780,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "interia.pl",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6795,7 +6795,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "libreoffice.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -6810,7 +6810,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 16.51,
     "domain": "lenovo.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -6826,7 +6826,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "kommersant.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6841,7 +6841,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "livedoor.blog",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -6856,7 +6856,7 @@
     "median_ratio": 4.66,
     "mean_ratio": 8.89,
     "domain": "libretexts.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -6892,7 +6892,7 @@
     "median_ratio": 4.77,
     "mean_ratio": 6.34,
     "domain": "libsyn.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "gray",
@@ -6928,7 +6928,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "kayak.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -6943,7 +6943,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "lodz.pl",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 13,
@@ -6958,7 +6958,7 @@
     "median_ratio": 5.01,
     "mean_ratio": 8.73,
     "domain": "loc.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -7070,7 +7070,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "line.me",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -7085,7 +7085,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 12.29,
     "domain": "main.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#4a86e8",
@@ -7121,7 +7121,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "lublin.pl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -7137,7 +7137,7 @@
     "median_ratio": 13.34,
     "mean_ratio": 12.75,
     "domain": "korrespondent.net",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -7211,7 +7211,7 @@
     "median_ratio": 12.82,
     "mean_ratio": 12.41,
     "domain": "ligazakon.net",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -7285,7 +7285,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "livejournal.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -7300,7 +7300,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "maryland.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 7,
@@ -7315,7 +7315,7 @@
     "median_ratio": 7.37,
     "mean_ratio": 7.8,
     "domain": "mcmaster.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -7389,7 +7389,7 @@
     "median_ratio": 5.21,
     "mean_ratio": 5.03,
     "domain": "majestic.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFCC00",
@@ -7425,7 +7425,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "mhlw.go.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -7440,7 +7440,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "mirtesen.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -7455,7 +7455,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "mathworks.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -7470,7 +7470,7 @@
     "median_ratio": 14.73,
     "mean_ratio": 10.02,
     "domain": "miami.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#f47321",
@@ -7525,7 +7525,7 @@
     "median_ratio": 6.77,
     "mean_ratio": 8.5,
     "domain": "moe.edu.tw",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgb(128, 175, 152)",
@@ -7618,7 +7618,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "mozilla.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -7633,7 +7633,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "mit.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -7648,7 +7648,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "msu.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -7663,7 +7663,7 @@
     "median_ratio": 4.6,
     "mean_ratio": 2.8,
     "domain": "microsoft.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -7699,7 +7699,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "mn.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -7714,7 +7714,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.24,
     "domain": "msk.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -7750,7 +7750,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "mynavi.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -7766,7 +7766,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "muni.cz",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 6,
@@ -7781,7 +7781,7 @@
     "median_ratio": 10.47,
     "mean_ratio": 9.85,
     "domain": "narod.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#f5f5f5",
@@ -7836,7 +7836,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 19.23,
     "domain": "msu.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -7852,7 +7852,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "mts.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -7888,7 +7888,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "neocities.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 58,
@@ -7903,7 +7903,7 @@
     "median_ratio": 5.74,
     "mean_ratio": 9.26,
     "domain": "ndl.go.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -8015,7 +8015,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "net.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -8030,7 +8030,7 @@
     "median_ratio": 1.79,
     "mean_ratio": 1.4,
     "domain": "ncl.ac.uk",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -8085,7 +8085,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "netbsd.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -8100,7 +8100,7 @@
     "median_ratio": 4.35,
     "mean_ratio": 4.35,
     "domain": "netlify.app",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#666",
@@ -8136,7 +8136,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "made-in-china.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 22,
@@ -8151,7 +8151,7 @@
     "median_ratio": 7.46,
     "mean_ratio": 8.81,
     "domain": "nasa.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -8263,7 +8263,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "niedersachsen.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8278,7 +8278,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "nih.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 7,
@@ -8293,7 +8293,7 @@
     "median_ratio": 2.03,
     "mean_ratio": 4.99,
     "domain": "marketscreener.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -8405,7 +8405,7 @@
     "median_ratio": 5.07,
     "mean_ratio": 5.07,
     "domain": "nii.ac.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -8421,7 +8421,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "nicovideo.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -8436,7 +8436,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 12.47,
     "domain": "news12.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "grey",
@@ -8472,7 +8472,7 @@
     "median_ratio": 18.1,
     "mean_ratio": 13.92,
     "domain": "ning.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -8488,7 +8488,7 @@
     "median_ratio": 6.69,
     "mean_ratio": 8.86,
     "domain": "nrw.de",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -8524,7 +8524,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "nist.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8539,7 +8539,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "nvidia.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8554,7 +8554,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "nypl.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8569,7 +8569,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "nsw.gov.au",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8584,7 +8584,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "oclc.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 8,
@@ -8599,7 +8599,7 @@
     "median_ratio": 13.6,
     "mean_ratio": 11.96,
     "domain": "ny.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -8654,7 +8654,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ntu.edu.tw",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -8669,7 +8669,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "nyu.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -8705,7 +8705,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "odoo.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8720,7 +8720,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ojp.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -8735,7 +8735,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "openedition.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -8750,7 +8750,7 @@
     "median_ratio": 12.98,
     "mean_ratio": 12.98,
     "domain": "office.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -8766,7 +8766,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "opensuse.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -8781,7 +8781,7 @@
     "median_ratio": 1.75,
     "mean_ratio": 2.47,
     "domain": "oracle.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -8836,7 +8836,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "obozrevatel.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -8851,7 +8851,7 @@
     "median_ratio": 4.0,
     "mean_ratio": 7.89,
     "domain": "overheid.nl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#8e8d8d",
@@ -8925,7 +8925,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "ovh.net",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FEFFFF",
@@ -8961,7 +8961,7 @@
     "median_ratio": 4.05,
     "mean_ratio": 5.85,
     "domain": "ndtv.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -9073,7 +9073,7 @@
     "median_ratio": 5.25,
     "mean_ratio": 8.13,
     "domain": "mediaset.it",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -9185,7 +9185,7 @@
     "median_ratio": 2.48,
     "mean_ratio": 9.3,
     "domain": "opera.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -9259,7 +9259,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "over-blog.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -9274,7 +9274,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "panasonic.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -9290,7 +9290,7 @@
     "median_ratio": 1.31,
     "mean_ratio": 5.43,
     "domain": "ox.ac.uk",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -9345,7 +9345,7 @@
     "median_ratio": 5.52,
     "mean_ratio": 9.13,
     "domain": "onet.pl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -9457,7 +9457,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "porsche.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -9472,7 +9472,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "pitt.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -9487,7 +9487,7 @@
     "median_ratio": 4.0,
     "mean_ratio": 3.38,
     "domain": "pchome.com.tw",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -9542,7 +9542,7 @@
     "median_ratio": 6.6,
     "mean_ratio": 8.4,
     "domain": "osu.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -9654,7 +9654,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "playstation.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -9670,7 +9670,7 @@
     "median_ratio": 3.85,
     "mean_ratio": 6.84,
     "domain": "pp.ua",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -9782,7 +9782,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "pixnet.net",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -9797,7 +9797,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "princeton.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -9812,7 +9812,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "puma.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -9867,7 +9867,7 @@
     "median_ratio": 5.85,
     "mean_ratio": 9.03,
     "domain": "poznan.pl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -9941,7 +9941,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "purdue.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -9956,7 +9956,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "r-project.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -9971,7 +9971,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "pravda.sk",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -9986,7 +9986,7 @@
     "median_ratio": 18.05,
     "mean_ratio": 9.53,
     "domain": "qq.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -10022,7 +10022,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "perfil.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -10058,7 +10058,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "redhat.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -10073,7 +10073,7 @@
     "median_ratio": 11.9,
     "mean_ratio": 13.57,
     "domain": "prnewswire.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -10089,7 +10089,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "rezdy.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -10104,7 +10104,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "rambler.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -10119,7 +10119,7 @@
     "median_ratio": 10.8,
     "mean_ratio": 10.8,
     "domain": "psu.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -10135,7 +10135,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "rbc.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -10151,7 +10151,7 @@
     "median_ratio": 11.55,
     "mean_ratio": 9.84,
     "domain": "rs-online.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgb(255 255 255/var(--tw-text-opacity,1))",
@@ -10263,7 +10263,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ria.ru",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -10278,7 +10278,7 @@
     "median_ratio": 1.63,
     "mean_ratio": 1.63,
     "domain": "nfl.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -10314,7 +10314,7 @@
     "median_ratio": 7.56,
     "mean_ratio": 8.93,
     "domain": "ria.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -10426,7 +10426,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "sagepub.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -10441,7 +10441,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ru.nl",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -10456,7 +10456,7 @@
     "median_ratio": 2.46,
     "mean_ratio": 2.57,
     "domain": "rtp.pt",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -10530,7 +10530,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "salesforce.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 8,
@@ -10545,7 +10545,7 @@
     "median_ratio": 5.31,
     "mean_ratio": 7.45,
     "domain": "sap.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -10638,7 +10638,7 @@
     "median_ratio": 6.53,
     "mean_ratio": 8.7,
     "domain": "rakuten.co.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#f264a5",
@@ -10712,7 +10712,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "samsung.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 5,
@@ -10727,7 +10727,7 @@
     "median_ratio": 5.14,
     "mean_ratio": 5.41,
     "domain": "service.gov.uk",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#e0e0e0",
@@ -10782,7 +10782,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "senate.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -10818,7 +10818,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "rutgers.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -10833,7 +10833,7 @@
     "median_ratio": 5.77,
     "mean_ratio": 5.77,
     "domain": "sfu.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -10849,7 +10849,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "semrush.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -10864,7 +10864,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "siemens.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -10880,7 +10880,7 @@
     "median_ratio": 6.99,
     "mean_ratio": 8.74,
     "domain": "sakura.ne.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -10992,7 +10992,7 @@
     "median_ratio": 15.35,
     "mean_ratio": 10.35,
     "domain": "shop-pro.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -11085,7 +11085,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "sky.it",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 39,
@@ -11100,7 +11100,7 @@
     "median_ratio": 4.96,
     "mean_ratio": 7.71,
     "domain": "rp.pl",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -11212,7 +11212,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "sogou.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -11227,7 +11227,7 @@
     "median_ratio": 1.06,
     "mean_ratio": 1.06,
     "domain": "shopify.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -11263,7 +11263,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "sld.cu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -11279,7 +11279,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "spydus.co.uk",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -11294,7 +11294,7 @@
     "median_ratio": 14.32,
     "mean_ratio": 10.08,
     "domain": "r7.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#e6490b",
@@ -11330,7 +11330,7 @@
     "median_ratio": 4.65,
     "mean_ratio": 8.28,
     "domain": "snu.ac.kr",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -11404,7 +11404,7 @@
     "median_ratio": 18.43,
     "mean_ratio": 12.95,
     "domain": "st-andrews.ac.uk",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -11420,7 +11420,7 @@
     "median_ratio": 10.77,
     "mean_ratio": 9.09,
     "domain": "stanford.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#eee",
@@ -11532,7 +11532,7 @@
     "median_ratio": 17.62,
     "mean_ratio": 12.18,
     "domain": "spb.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#999999",
@@ -11568,7 +11568,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "statcounter.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 24,
@@ -11583,7 +11583,7 @@
     "median_ratio": 5.78,
     "mean_ratio": 8.16,
     "domain": "sina.com.cn",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -11695,7 +11695,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "sohu.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -11710,7 +11710,7 @@
     "median_ratio": 4.0,
     "mean_ratio": 4.0,
     "domain": "substack.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -11746,7 +11746,7 @@
     "median_ratio": 6.91,
     "mean_ratio": 9.9,
     "domain": "shein.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -11858,7 +11858,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "telegra.ph",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 195,
@@ -11873,7 +11873,7 @@
     "median_ratio": 8.1,
     "mean_ratio": 9.39,
     "domain": "statcan.gc.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -11985,7 +11985,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "tableau.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -12001,7 +12001,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "telegram.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 24,
@@ -12016,7 +12016,7 @@
     "median_ratio": 10.25,
     "mean_ratio": 9.79,
     "domain": "talent.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -12128,7 +12128,7 @@
     "median_ratio": 1.78,
     "mean_ratio": 1.78,
     "domain": "teachable.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -12164,7 +12164,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "stripe.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -12179,7 +12179,7 @@
     "median_ratio": 8.59,
     "mean_ratio": 8.59,
     "domain": "sinica.edu.tw",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -12195,7 +12195,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "temple.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 12,
@@ -12210,7 +12210,7 @@
     "median_ratio": 5.73,
     "mean_ratio": 9.2,
     "domain": "stlouisfed.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "white",
@@ -12322,7 +12322,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "trend.az",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 51,
@@ -12337,7 +12337,7 @@
     "median_ratio": 5.92,
     "mean_ratio": 8.8,
     "domain": "texas.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -12449,7 +12449,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "trip.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -12485,7 +12485,7 @@
     "median_ratio": 11.6,
     "mean_ratio": 9.95,
     "domain": "telegraph.co.uk",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -12540,7 +12540,7 @@
     "median_ratio": 3.07,
     "mean_ratio": 7.59,
     "domain": "tengrinews.kz",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -12595,7 +12595,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "tufts.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -12610,7 +12610,7 @@
     "median_ratio": 18.18,
     "mean_ratio": 14.15,
     "domain": "tokyo.lg.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -12626,7 +12626,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "tvbs.com.tw",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 27,
@@ -12641,7 +12641,7 @@
     "median_ratio": 4.88,
     "mean_ratio": 7.83,
     "domain": "timesnownews.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -12753,7 +12753,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uab.cat",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 5,
@@ -12768,7 +12768,7 @@
     "median_ratio": 10.56,
     "mean_ratio": 10.19,
     "domain": "uba.ar",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -12804,7 +12804,7 @@
     "median_ratio": 8.75,
     "mean_ratio": 9.42,
     "domain": "ub.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -12840,7 +12840,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ubc.ca",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 9,
@@ -12855,7 +12855,7 @@
     "median_ratio": 8.02,
     "mean_ratio": 10.96,
     "domain": "tyc.edu.tw",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#00BCD4",
@@ -12929,7 +12929,7 @@
     "median_ratio": 7.29,
     "mean_ratio": 9.76,
     "domain": "uc.pt",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -12965,7 +12965,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ucdavis.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -12980,7 +12980,7 @@
     "median_ratio": 1.52,
     "mean_ratio": 1.26,
     "domain": "ubuntu.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -13035,7 +13035,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ucla.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 24,
@@ -13050,7 +13050,7 @@
     "median_ratio": 5.06,
     "mean_ratio": 5.94,
     "domain": "toyota.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -13162,7 +13162,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "udn.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -13177,7 +13177,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ucsb.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 58,
@@ -13192,7 +13192,7 @@
     "median_ratio": 6.34,
     "mean_ratio": 8.35,
     "domain": "u-tokyo.ac.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -13304,7 +13304,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "tum.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -13319,7 +13319,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uchile.cl",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -13334,7 +13334,7 @@
     "median_ratio": 1.66,
     "mean_ratio": 6.92,
     "domain": "ufrj.br",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -13389,7 +13389,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "tradingview.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -13404,7 +13404,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ucsd.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -13419,7 +13419,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "ugent.be",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -13434,7 +13434,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 15.91,
     "domain": "ugr.es",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -13450,7 +13450,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.0,
     "domain": "umd.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -13486,7 +13486,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uiowa.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -13501,7 +13501,7 @@
     "median_ratio": 1.0,
     "mean_ratio": 1.18,
     "domain": "ulaval.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -13575,7 +13575,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "un.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 5,
@@ -13590,7 +13590,7 @@
     "median_ratio": 3.22,
     "mean_ratio": 7.51,
     "domain": "uct.ac.za",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -13664,7 +13664,7 @@
     "median_ratio": 4.69,
     "mean_ratio": 5.6,
     "domain": "uma.es",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -13776,7 +13776,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uni-bonn.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -13791,7 +13791,7 @@
     "median_ratio": 6.9,
     "mean_ratio": 6.5,
     "domain": "umn.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -13827,7 +13827,7 @@
     "median_ratio": 11.42,
     "mean_ratio": 9.3,
     "domain": "umich.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgba(255,255,255,1)",
@@ -13939,7 +13939,7 @@
     "median_ratio": 8.93,
     "mean_ratio": 11.42,
     "domain": "uni-goettingen.de",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#7387ad",
@@ -13975,7 +13975,7 @@
     "median_ratio": 10.53,
     "mean_ratio": 10.57,
     "domain": "unam.mx",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -14087,7 +14087,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 10.27,
     "domain": "unc.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -14142,7 +14142,7 @@
     "median_ratio": 11.42,
     "mean_ratio": 11.42,
     "domain": "uni-muenchen.de",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -14158,7 +14158,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uni-hamburg.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -14173,7 +14173,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uefa.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -14188,7 +14188,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uni-lj.si",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -14203,7 +14203,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "unifr.ch",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -14218,7 +14218,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "uni-stuttgart.de",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -14234,7 +14234,7 @@
     "median_ratio": 5.95,
     "mean_ratio": 7.32,
     "domain": "ufl.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffffa6",
@@ -14346,7 +14346,7 @@
     "median_ratio": 7.17,
     "mean_ratio": 8.68,
     "domain": "unibo.it",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -14458,7 +14458,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uni-heidelberg.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -14473,7 +14473,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "unistra.fr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -14488,7 +14488,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.06,
     "domain": "unifrance.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -14524,7 +14524,7 @@
     "median_ratio": 7.42,
     "mean_ratio": 9.05,
     "domain": "unicamp.br",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -14636,7 +14636,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uni-tuebingen.de",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -14651,7 +14651,7 @@
     "median_ratio": 8.78,
     "mean_ratio": 8.78,
     "domain": "unipd.it",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -14667,7 +14667,7 @@
     "median_ratio": 7.22,
     "mean_ratio": 8.54,
     "domain": "unt.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -14683,7 +14683,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.36,
     "domain": "uol.com.br",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -14719,7 +14719,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 9.16,
     "domain": "upc.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffffa6",
@@ -14755,7 +14755,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uoa.gr",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -14770,7 +14770,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "univie.ac.at",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -14785,7 +14785,7 @@
     "median_ratio": 18.26,
     "mean_ratio": 18.26,
     "domain": "unsw.edu.au",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -14801,7 +14801,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "upenn.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 18,
@@ -14816,7 +14816,7 @@
     "median_ratio": 6.01,
     "mean_ratio": 8.13,
     "domain": "unlp.edu.ar",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -14928,7 +14928,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uq.edu.au",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 4,
@@ -14943,7 +14943,7 @@
     "median_ratio": 2.91,
     "mean_ratio": 2.96,
     "domain": "uservoice.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ff6720",
@@ -15036,7 +15036,7 @@
     "median_ratio": 11.53,
     "mean_ratio": 10.05,
     "domain": "usc.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#eee",
@@ -15148,7 +15148,7 @@
     "median_ratio": 4.04,
     "mean_ratio": 6.36,
     "domain": "usp.br",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "rgb(255, 255, 255)",
@@ -15260,7 +15260,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uscourts.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -15275,7 +15275,7 @@
     "median_ratio": 4.41,
     "mean_ratio": 4.41,
     "domain": "utah.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -15311,7 +15311,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "usda.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 9,
@@ -15326,7 +15326,7 @@
     "median_ratio": 16.86,
     "mean_ratio": 12.97,
     "domain": "usps.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -15362,7 +15362,7 @@
     "median_ratio": 5.14,
     "mean_ratio": 6.81,
     "domain": "uned.es",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -15474,7 +15474,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 21.0,
     "domain": "ut.ac.ir",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -15490,7 +15490,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "usu.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -15505,7 +15505,7 @@
     "median_ratio": 1.66,
     "mean_ratio": 1.66,
     "domain": "utah.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -15541,7 +15541,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "utexas.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -15556,7 +15556,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.34,
     "domain": "uzh.ch",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ff0000",
@@ -15592,7 +15592,7 @@
     "median_ratio": 9.04,
     "mean_ratio": 10.26,
     "domain": "unsplash.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -15704,7 +15704,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "uwaterloo.ca",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -15719,7 +15719,7 @@
     "median_ratio": 13.77,
     "mean_ratio": 13.77,
     "domain": "uvic.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -15735,7 +15735,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "utoronto.ca",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -15750,7 +15750,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "virginia.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 3,
@@ -15765,7 +15765,7 @@
     "median_ratio": 1.76,
     "mean_ratio": 7.92,
     "domain": "virginia.gov",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -15820,7 +15820,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "wa.gov",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -15835,7 +15835,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "vercel.app",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 7,
@@ -15850,7 +15850,7 @@
     "median_ratio": 1.62,
     "mean_ratio": 2.82,
     "domain": "voanews.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -15962,7 +15962,7 @@
     "median_ratio": 16.24,
     "mean_ratio": 16.24,
     "domain": "vt.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -15978,7 +15978,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "web.app",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 1,
@@ -15993,7 +15993,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 12.02,
     "domain": "washington.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -16009,7 +16009,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "wikileaks.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -16024,7 +16024,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "v2ex.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -16039,7 +16039,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "weebly.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 64,
@@ -16054,7 +16054,7 @@
     "median_ratio": 4.85,
     "mean_ratio": 7.81,
     "domain": "vnexpress.net",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -16166,7 +16166,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.0,
     "domain": "wikimedia.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -16202,7 +16202,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.0,
     "domain": "wikinews.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,0)",
@@ -16238,7 +16238,7 @@
     "median_ratio": 2.39,
     "mean_ratio": 2.39,
     "domain": "weblio.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -16274,7 +16274,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.0,
     "domain": "wikivoyage.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,0)",
@@ -16310,7 +16310,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.0,
     "domain": "wikiversity.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,0)",
@@ -16346,7 +16346,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.0,
     "domain": "wikiquote.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,0)",
@@ -16382,7 +16382,7 @@
     "median_ratio": 21.0,
     "mean_ratio": 11.0,
     "domain": "wiktionary.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,0)",
@@ -16418,7 +16418,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "worldbank.org",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 79,
@@ -16433,7 +16433,7 @@
     "median_ratio": 5.71,
     "mean_ratio": 7.19,
     "domain": "walla.co.il",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -16545,7 +16545,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "wisc.edu",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -16560,7 +16560,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "www.gov.uk",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 11,
@@ -16575,7 +16575,7 @@
     "median_ratio": 10.14,
     "mean_ratio": 10.74,
     "domain": "wustl.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -16630,7 +16630,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "workplace.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -16645,7 +16645,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "xrea.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 97,
@@ -16660,7 +16660,7 @@
     "median_ratio": 4.01,
     "mean_ratio": 6.19,
     "domain": "wordpress.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -16772,7 +16772,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "yahoo.co.jp",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 0,
@@ -16787,7 +16787,7 @@
     "median_ratio": null,
     "mean_ratio": null,
     "domain": "yahoo.com",
-    "status": "analyzed"
+    "status": "analysed"
   },
   {
     "total_pairings": 2,
@@ -16802,7 +16802,7 @@
     "median_ratio": 13.08,
     "mean_ratio": 8.88,
     "domain": "yale.edu",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": []
   },
   {
@@ -16818,7 +16818,7 @@
     "median_ratio": 6.29,
     "mean_ratio": 8.29,
     "domain": "youtube.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -16892,7 +16892,7 @@
     "median_ratio": 12.02,
     "mean_ratio": 10.94,
     "domain": "yorku.ca",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -16947,7 +16947,7 @@
     "median_ratio": 3.62,
     "mean_ratio": 5.88,
     "domain": "xsrv.jp",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#fff",
@@ -17059,7 +17059,7 @@
     "median_ratio": 7.45,
     "mean_ratio": 9.8,
     "domain": "zenit.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#ffffff",
@@ -17171,7 +17171,7 @@
     "median_ratio": 12.04,
     "mean_ratio": 9.45,
     "domain": "yandex.ru",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -17283,7 +17283,7 @@
     "median_ratio": 3.66,
     "mean_ratio": 6.37,
     "domain": "zenfolio.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -17395,7 +17395,7 @@
     "median_ratio": 3.95,
     "mean_ratio": 6.8,
     "domain": "vecteezy.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#000000 (assumed)",
@@ -17507,7 +17507,7 @@
     "median_ratio": 4.62,
     "mean_ratio": 9.09,
     "domain": "wix.com",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "#FFFFFF",
@@ -17619,7 +17619,7 @@
     "median_ratio": 7.27,
     "mean_ratio": 8.75,
     "domain": "wikipedia.org",
-    "status": "analyzed",
+    "status": "analysed",
     "worst_pairings": [
       {
         "foreground": "hsla(0,0%,100%,0)",

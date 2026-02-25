@@ -25,8 +25,8 @@ SUMMARY_FILE = os.path.join(OUTPUT_DIR, "wcag_summary.json")
 CSV_FILE = os.path.join(OUTPUT_DIR, "wcag_report.csv")
 
 
-def categorize_domain(domain):
-    """Categorize a domain by its type based on TLD and known patterns."""
+def categorise_domain(domain):
+    """Categorise a domain by its type based on TLD and known patterns."""
     d = domain.lower()
 
     # Education
@@ -51,7 +51,7 @@ def categorize_domain(domain):
     if any(d == w or d.endswith("." + w) for w in wiki_domains):
         return "Open Knowledge"
 
-    # Research/Academic organizations
+    # Research/Academic organisations
     research_domains = ("nih.gov", "nasa.gov", "noaa.gov", "nist.gov",
                         "cern.ch", "cnrs.fr", "mpg.de", "worldbank.org",
                         "un.org", "fao.org", "si.edu")
@@ -109,8 +109,8 @@ def categorize_domain(domain):
 
 def compute_statistics(results):
     """Compute aggregate statistics from per-domain results."""
-    analyzed = [r for r in results if r.get("status") == "analyzed"]
-    with_colors = [r for r in analyzed if r.get("total_pairings", 0) > 0]
+    analysed = [r for r in results if r.get("status") == "analysed"]
+    with_colors = [r for r in analysed if r.get("total_pairings", 0) > 0]
 
     if not with_colors:
         return {"error": "No domains with color data found"}
@@ -141,7 +141,7 @@ def compute_statistics(results):
     # Category analysis
     categories = defaultdict(lambda: {"domains": [], "rates": []})
     for r in with_colors:
-        cat = categorize_domain(r["domain"])
+        cat = categorise_domain(r["domain"])
         categories[cat]["domains"].append(r["domain"])
         if r.get("pass_rate_normal") is not None:
             categories[cat]["rates"].append(r["pass_rate_normal"])
@@ -195,10 +195,10 @@ def compute_statistics(results):
     summary = {
         "crawl_id": "CC-MAIN-2026-08",
         "total_domains_in_list": len(results),
-        "domains_analyzed": len(analyzed),
+        "domains_analysed": len(analysed),
         "domains_with_color_data": len(with_colors),
-        "domains_no_color_data": len(analyzed) - len(with_colors),
-        "domains_failed": len(results) - len(analyzed),
+        "domains_no_color_data": len(analysed) - len(with_colors),
+        "domains_failed": len(results) - len(analysed),
 
         "total_unique_pairings": sum(r["total_pairings"] for r in with_colors),
         "total_failing_normal": sum(r["fail_normal"] for r in with_colors),
@@ -234,7 +234,7 @@ def compute_statistics(results):
 
 def export_csv(results):
     """Export results as CSV for spreadsheet use."""
-    analyzed = [r for r in results if r.get("status") == "analyzed"
+    analysed = [r for r in results if r.get("status") == "analysed"
                 and r.get("total_pairings", 0) > 0]
 
     with open(CSV_FILE, "w", newline="") as f:
@@ -248,11 +248,11 @@ def export_csv(results):
         ])
 
         for i, r in enumerate(
-                sorted(analyzed, key=lambda x: x["domain"]), 1):
+                sorted(analysed, key=lambda x: x["domain"]), 1):
             writer.writerow([
                 i,
                 r["domain"],
-                categorize_domain(r["domain"]),
+                categorise_domain(r["domain"]),
                 r.get("total_pairings", 0),
                 r.get("pass_normal", 0),
                 r.get("fail_normal", 0),
@@ -294,20 +294,20 @@ def main():
     print(f"Crawl: {summary.get('crawl_id', 'N/A')}")
     print("=" * 60)
 
-    print(f"\nDomains analyzed:        {summary.get('domains_analyzed', 0)}")
-    print(f"With color data:         {summary.get('domains_with_color_data', 0)}")
-    print(f"No color data:           {summary.get('domains_no_color_data', 0)}")
-    print(f"Failed to process:       {summary.get('domains_failed', 0)}")
+    print(f"\nDomains analysed:        {summary.get('domains_analysed', 0)}")
+    print(f"With color data:           {summary.get('domains_with_color_data', 0)}")
+    print(f"No color data:             {summary.get('domains_no_color_data', 0)}")
+    print(f"Failed to process:         {summary.get('domains_failed', 0)}")
 
     print(f"\nTotal color pairings:    {summary.get('total_unique_pairings', 0)}")
-    print(f"Failing (normal text):   {summary.get('total_failing_normal', 0)}")
-    print(f"Failing (large text):    {summary.get('total_failing_large', 0)}")
+    print(f"Failing (normal text):     {summary.get('total_failing_normal', 0)}")
+    print(f"Failing (large text):      {summary.get('total_failing_large', 0)}")
 
     print(f"\nMean pass rate (normal): {summary.get('mean_pass_rate_normal', 'N/A')}%")
-    print(f"Median pass rate:        {summary.get('median_pass_rate_normal', 'N/A')}%")
-    print(f"Fully compliant:         {summary.get('pct_fully_compliant_normal', 'N/A')}%")
-    print(f"Above 90% pass:          {summary.get('pct_above_90_normal', 'N/A')}%")
-    print(f"Below 50% pass:          {summary.get('pct_below_50_normal', 'N/A')}%")
+    print(f"Median pass rate:          {summary.get('median_pass_rate_normal', 'N/A')}%")
+    print(f"Fully compliant:           {summary.get('pct_fully_compliant_normal', 'N/A')}%")
+    print(f"Above 90% pass:            {summary.get('pct_above_90_normal', 'N/A')}%")
+    print(f"Below 50% pass:            {summary.get('pct_below_50_normal', 'N/A')}%")
 
     if summary.get("pass_rate_distribution"):
         print(f"\nPass rate distribution:")

@@ -61,7 +61,7 @@ Then run the rest of the pipeline:
 
 ```bash
 python3 02_fetch_warc.py             # ~1 min  (WARC byte-range fetches with 8 workers)
-python3 03_analyze_wcag.py           # ~2 min  (colour extraction + analysis)
+python3 03_analyse_wcag.py           # ~2 min  (colour extraction + analysis)
 python3 04_generate_report.py        # ~2 sec  (summary statistics)
 ```
 
