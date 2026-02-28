@@ -254,7 +254,7 @@ def relative_luminance(rgb):
     Calculate relative luminance per WCAG 2.1 definition.
     https://www.w3.org/TR/WCAG21/#dfn-relative-luminance
     """
-    def linearize(c):
+    def linearise(c):
         c = c / 255.0
         if c <= 0.04045:
             return c / 12.92
@@ -262,7 +262,7 @@ def relative_luminance(rgb):
             return ((c + 0.055) / 1.055) ** 2.4
 
     r, g, b = rgb
-    return 0.2126 * linearize(r) + 0.7152 * linearize(g) + 0.0722 * linearize(b)
+    return 0.2126 * linearise(r) + 0.7152 * linearise(g) + 0.0722 * linearise(b)
 
 
 def contrast_ratio(rgb1, rgb2):
